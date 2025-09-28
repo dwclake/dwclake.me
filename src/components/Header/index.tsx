@@ -1,11 +1,12 @@
-import "./Header.css";
-const selfie = require("../../../assets/selfie.jpg");
+import Image from "next/image";
+
+import styles from "./Header.module.css";
 
 export function Header() {
     return (
-        <div className="header-body">
-            <img className="selfie" src={selfie} alt="selfie" />
-            <ul className="nav">
+        <div className={styles.body}>
+            <Image className={styles.selfie} src="/selfie.jpg" alt="selfie" width={80} height={80}/>
+            <ul className={styles.nav}>
                 <li>Home</li>
                 <li>Code</li>
                 <li>Photography</li>
