@@ -1,10 +1,11 @@
-import "../styles/Header.css";
+import "./Header.css";
+const selfie = require("../../../assets/selfie.jpg");
 
 export function Header() {
     return (
-        <div className="header">
-            <img id="logo" src="../assets/branding/png/ruka-green-transparent.png" alt="Logo" />
-            <ul id="links">
+        <div className="header-body">
+            <img className="selfie" src={selfie} alt="selfie" />
+            <ul className="nav">
                 <li>Home</li>
                 <li>Code</li>
                 <li>Photography</li>
@@ -15,5 +16,3 @@ export function Header() {
         </div>
     );
 }
-
-export default Header;
