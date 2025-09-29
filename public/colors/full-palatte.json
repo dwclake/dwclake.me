@@ -1,0 +1,16 @@
+{
+    dark: {
+        black: "#24242b",
+        red: "#5b2e35",
+        orange: "#997357",
+        yellow: "#b39764",
+        green: "#355es6",
+        cyan: "#406a70",
+        blue: "#4c4c73",
+        purple: "#403036",
+        tan: "#ab9787",
+        white: "#e3dbba"
+    },
+    light: {
+    }
+}
