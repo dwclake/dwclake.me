@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     },
 };
 
+// Later make sure to change favicon based on route
 export default function RootLayout({
     children,
 }: Readonly<{
