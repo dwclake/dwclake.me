@@ -1,7 +1,7 @@
 import "./Header.css";
 import selfie from "@images/selfie.jpg";
 
-export function Header() {
+const Header = () => {
     return (
         <div className="header" >
             <img className="selfie" src={selfie} alt="selfie" />
@@ -16,3 +16,5 @@ export function Header() {
         </div>
     );
 }
+
+export { Header };
