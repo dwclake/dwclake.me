@@ -1,12 +1,11 @@
-import Image from "next/image";
-
-import styles from "./Header.module.css";
+import "./Header.css";
+import selfie from "@images/selfie.jpg";
 
 export function Header() {
     return (
-        <div className={styles.body}>
-            <Image className={styles.selfie} src="/selfie.jpg" alt="selfie" width={80} height={80}/>
-            <ul className={styles.nav}>
+        <div className="header" >
+            <img className="selfie" src={selfie} alt="selfie" />
+            <ul className="nav">
                 <li>Home</li>
                 <li>Code</li>
                 <li>Photography</li>
