@@ -1,4 +1,4 @@
-import "./Header.css";
+import "./Header/Header.css";
 import selfie from "@images/selfie.jpg";
 
 const Header = () => {
