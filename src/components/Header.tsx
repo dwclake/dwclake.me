@@ -1,7 +1,7 @@
-import "./Header/Header.css";
-import selfie from "@images/selfie.jpg";
+import "./Header/Header.css"
+import selfie from "@images/selfie.jpg"
 
-const Header = () => {
+export const Header = () => {
     return (
         <div className="header" >
             <img className="selfie" src={selfie} alt="selfie" />
@@ -14,7 +14,5 @@ const Header = () => {
                 <li>About</li>
             </ul>
         </div>
-    );
+    )
 }
-
-export { Header };

@@ -1,7 +1,7 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom'
 
-import { Header } from '@/containers/Header';
-import { Footer } from '@/containers/Footer';
+import { Header } from '@components/Header'
+import { Footer } from '@components/Footer'
 
 export const Root = () => {
     return (
@@ -12,5 +12,5 @@ export const Root = () => {
             </main>
             <Footer />
         </>
-    );
+    )
 }

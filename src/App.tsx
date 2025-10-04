@@ -1,14 +1,15 @@
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 
+import { Root } from "@/components";
+
 import {
-    Root,
     About,
     Code,
     Home,
     Music,
     Photography,
     Writing
-} from "@/containers";
+} from "@/routes";
 
 import "@/App.css";
 

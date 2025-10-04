@@ -6,4 +6,4 @@ import { Music } from "./Music";
 import { Photography } from "./Photography";
 import { Writing } from "./Writing";
 
-export { Root, About, Code, Home, Music, Photography, Writing };
+export { About, Code, Home, Music, Photography, Writing };
