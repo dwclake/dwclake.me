@@ -23,13 +23,13 @@
 
     "baseUrl": ".",
     "paths": {
-        "@/*": ["src/*"],
-        "@components/*": ["src/components/*"],
-        "@routes/*": ["src/routes/*"],
-        "@images/*": ["public/images/*"],
-        "@branding/*": ["public/branding/*"],
-        "@fonts/*": ["public/fonts/*"],
-        "@colours/*": ["public/colours/*"]
+        "~/*": ["src/*"],
+        "~components/*": ["src/components/*"],
+        "~routes/*": ["src/routes/*"],
+        "~images/*": ["public/images/*"],
+        "~branding/*": ["public/branding/*"],
+        "~fonts/*": ["public/fonts/*"],
+        "~colours/*": ["public/colours/*"]
     },
 
     // Some stricter flags (disabled by default)

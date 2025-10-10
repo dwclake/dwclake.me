@@ -1,11 +1,11 @@
-import "./Header/Header.css"
-import selfie from "@images/selfie.jpg"
+import './Header/Header.css'
+import selfie from '~images/selfie.jpg'
 
 export const Header = () => {
     return (
-        <div className="header" >
-            <img className="selfie" src={selfie} alt="selfie" />
-            <ul className="nav">
+        <div className='header' >
+            <img className='selfie' src={selfie} alt='selfie' />
+            <ul className='nav'>
                 <li>Home</li>
                 <li>Code</li>
                 <li>Photography</li>
