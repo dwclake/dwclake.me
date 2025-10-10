@@ -1,10 +1,10 @@
-import "./Header.css";
-import selfie from "@images/selfie.jpg";
+import "./Header/Header.css"
+import logo from "~branding/ruka/svg/ruka-green-transparent.svg"
 
-export function Header() {
+export const Header = () => {
     return (
         <div className="header" >
-            <img className="selfie" src={selfie} alt="selfie" />
+            <img className="logo" src={logo} alt="logo" />
             <ul className="nav">
                 <li>Home</li>
                 <li>Code</li>
@@ -14,5 +14,5 @@ export function Header() {
                 <li>About</li>
             </ul>
         </div>
-    );
+    )
 }

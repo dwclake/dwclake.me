@@ -1,14 +1,37 @@
-import { Header } from './components/Header'
-import { Footer } from './components/Footer'
+import { 
+    createBrowserRouter, 
+    createRoutesFromElements, 
+    Route, 
+    RouterProvider 
+} from "react-router-dom"
 
-import "./App.css"
+import { Root } from "~/components"
+import {
+    About,
+    Code,
+    Home,
+    Music,
+    Photography,
+    Writing
+} from "~/routes"
 
-export default function App() {
-  return (
-      <div>
-          <Header />
-          <h1>Welcome to my Portfolio!</h1>
-          <Footer />
-      </div>
-  )
+import "~/App.css"
+
+const router = createBrowserRouter(createRoutesFromElements(
+    <Route path="/" element={<Root />}>
+        <Route index               element={<Home />} />
+        <Route path="/about"       element={<About />} />
+        <Route path="/code"        element={<Code /> } />
+        <Route path="/music"       element={<Music />} />
+        <Route path="/photography" element={<Photography />} />
+        <Route path="/writing"     element={<Writing />} />
+    </Route>
+))
+
+export const App = () => {
+    return (
+        <div>
+            <RouterProvider router={router} />
+        </div>
+    )
 }

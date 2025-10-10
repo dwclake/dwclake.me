@@ -1,41 +1,18 @@
-import { serve } from "bun";
-import index from "index.html";
+import { StrictMode } from "react"
+import { createRoot } from "react-dom/client"
 
-const server = serve({
-  routes: {
-    // Serve index.html for all unmatched routes.
-    "/*": index,
+import { App } from "~/App"
 
-    "/api/hello": {
-      async GET(req) {
-        return Response.json({
-          message: "Hello, world!",
-          method: "GET",
-        });
-      },
-      async PUT(req) {
-        return Response.json({
-          message: "Hello, world!",
-          method: "PUT",
-        });
-      },
-    },
+const container = document.getElementById("root")!
+const app = (
+    <StrictMode>
+        <App />
+    </StrictMode>
+)
 
-    "/api/hello/:name": async req => {
-      const name = req.params.name;
-      return Response.json({
-        message: `Hello, ${name}!`,
-      });
-    },
-  },
-
-  development: process.env.NODE_ENV !== "production" && {
-    // Enable browser hot reloading in development
-    hmr: true,
-
-    // Echo console logs from the browser to the server
-    console: true,
-  },
-});
-
-console.log(`🚀 Server running at ${server.url}`);
+if (import.meta.hot) {
+    const root = (import.meta.hot.data.root ??= createRoot(container))
+    root.render(app)
+} else {
+    createRoot(container).render(app)
+}
