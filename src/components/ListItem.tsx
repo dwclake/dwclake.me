@@ -1,7 +1,7 @@
-const ListItem = (props: { 
-    children: React.ReactNode 
-}) => {
-    return <li>{props.children}</li>
-}
+import React from "react"
 
-export { ListItem }
+type Props = { children: React.ReactNode }
+
+export const ListItem = (props: Props) => {
+    return <li>{ props.children }</li>
+}

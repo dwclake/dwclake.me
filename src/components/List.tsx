@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react"
 
-export const List = (props: {
-    children: [React.ReactNode] | React.ReactNode
-}) => {
-    return <ul>{props.children}</ul>
+type Props = { children: [React.ReactNode] | React.ReactNode }
+
+export const List = (props: Props) => {
+    return <ul>{ props.children }</ul>
 }

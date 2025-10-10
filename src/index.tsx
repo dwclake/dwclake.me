@@ -1,9 +1,9 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { StrictMode } from "react"
+import { createRoot } from "react-dom/client"
 
-import { App } from '~/App'
+import { App } from "~/App"
 
-const elem = document.getElementById('root')!
+const container = document.getElementById("root")!
 const app = (
     <StrictMode>
         <App />
@@ -11,8 +11,8 @@ const app = (
 )
 
 if (import.meta.hot) {
-    const root = (import.meta.hot.data.root ??= createRoot(elem))
+    const root = (import.meta.hot.data.root ??= createRoot(container))
     root.render(app)
 } else {
-    createRoot(elem).render(app)
+    createRoot(container).render(app)
 }

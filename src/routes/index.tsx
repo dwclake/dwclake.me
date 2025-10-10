@@ -1,4 +1,3 @@
-import { Root } from "./Root";
 import { About } from "./About";
 import { Code } from "./Code";
 import { Home } from "./Home";
