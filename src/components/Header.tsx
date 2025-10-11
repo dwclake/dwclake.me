@@ -1,5 +1,5 @@
-import logo from "~svg/ruka-green-transparent.svg"
-import styles from "~styles/Header.module.css"
+import logo from "@/svg/ruka-green-transparent.svg"
+import styles from "~/styles/Header.module.css"
 
 export const Header = () => {
     return (

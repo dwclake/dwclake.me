@@ -24,15 +24,7 @@
     "baseUrl": ".",
     "paths": {
         "~/*": ["src/*"],
-        "~components/*": ["src/components/*"],
-        "~routes/*": ["src/routes/*"],
-        "~styles/*": ["src/styles/*"],
-        "~jpg/*": ["public/jpg/*"],
-        "~svg/*": ["public/svg/*"],
-        "~png/*": ["public/png/*"],
-        "~favicon/*": ["public/favicon/*"],
-        "~fonts/*": ["public/fonts/*"],
-        "~colours/*": ["public/colours/*"]
+        "@/*": ["public/*"]
     },
 
     // Some stricter flags (disabled by default)

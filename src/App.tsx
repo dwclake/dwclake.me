@@ -5,7 +5,7 @@ import {
     RouterProvider 
 } from "react-router-dom"
 
-import { Root } from "~/components"
+import { Root } from "~/components/Root"
 import {
     About,
     Code,
@@ -15,7 +15,7 @@ import {
     Writing
 } from "~/routes"
 
-import styles from "~styles/App.module.css"
+import styles from "~/styles/App.module.css"
 
 const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Root />}>
