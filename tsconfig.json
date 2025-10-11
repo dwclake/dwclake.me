@@ -26,8 +26,11 @@
         "~/*": ["src/*"],
         "~components/*": ["src/components/*"],
         "~routes/*": ["src/routes/*"],
-        "~images/*": ["public/images/*"],
-        "~branding/*": ["public/branding/*"],
+        "~styles/*": ["src/styles/*"],
+        "~jpg/*": ["public/jpg/*"],
+        "~svg/*": ["public/svg/*"],
+        "~png/*": ["public/png/*"],
+        "~favicon/*": ["public/favicon/*"],
         "~fonts/*": ["public/fonts/*"],
         "~colours/*": ["public/colours/*"]
     },

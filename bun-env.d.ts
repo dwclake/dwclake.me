@@ -24,6 +24,14 @@ declare module "*.jpg" {
     export = path;
 }
 
+declare module "*.ico" {
+    /**
+     * A path to the ICO file
+     */
+    const path: `${string}.ico`;
+    export = path;
+}
+
 declare module "*.module.css" {
     /**
      * A record of class names to their corresponding CSS module classes
