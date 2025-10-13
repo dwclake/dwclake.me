@@ -15,7 +15,7 @@ import {
     Writing
 } from "@/views"
 
-import styles from "@/styles/App.module.css"
+import "@/styles/App.css"
 
 const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Root />}>

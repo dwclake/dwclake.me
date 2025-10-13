@@ -12,11 +12,11 @@
     width: auto;
 }
 
-.nav {
+.header-nav {
     grid-area: nav;
     list-style: none;
 }
 
-.nav li {
+.header-nav li {
     font-family: 'Arial', sans-serif;
 }

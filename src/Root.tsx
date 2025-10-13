@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom"
 import { GLCanvas } from "@/components/ui/glcanvas"
 
 import logo from "~/svg/ruka-green-transparent.svg"
-import styles from "@/styles/Root.module.css"
+import "@/styles/Root.css"
 
 export const Root = () => {
     const render = (gl: WebGLRenderingContext, time: number) => {
@@ -29,9 +29,9 @@ export const Root = () => {
 
 const Header = () => {
     return (
-        <header className={styles.header} >
-            <img className={styles["header-logo"]} src={logo} alt="logo" />
-            <nav className={styles.nav}>
+        <header className="header" >
+            <img className="header-logo" src={logo} alt="logo" />
+            <nav className="header-nav">
                 <li>Home</li>
                 <li>Code</li>
                 <li>Photography</li>
