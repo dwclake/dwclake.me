@@ -1,11 +1,11 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit"
-import { 
-    useDispatch as reduxUseDispatch, 
-    useSelector as reduxUseSelector, 
-    type TypedUseSelectorHook 
+import {
+    useDispatch as reduxUseDispatch,
+    useSelector as reduxUseSelector,
+    type TypedUseSelectorHook
 } from "react-redux"
 
-import Images from "~/features/images/Images"
+import Images from "@/features/images/Images"
 
 const root = combineReducers({
     images: Images
