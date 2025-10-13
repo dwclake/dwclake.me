@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react"
 import { Outlet } from "react-router-dom"
 
 import { GLCanvas } from "@/components/ui/glcanvas"
