@@ -1,6 +1,6 @@
-# Personal Portfolio Website
+# My Portfolio
 
-This is a personal portfolio website built using the Next.js framework, hosted using Render. 
+This is a personal portfolio website built using React + Bun, hosted on Render. 
 
 It showcases my projects (both personal and professional), skills, and contact information.
 
