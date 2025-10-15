@@ -1,3 +1,9 @@
+/* @Author: dwclake
+ * @Created: 10-15-2025
+ *
+ * The entrypoint for the frontend, linked from index.html
+ */
+
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
 import { Provider } from "react-redux"

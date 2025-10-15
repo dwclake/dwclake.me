@@ -1,3 +1,10 @@
+/* @author: dwclake
+ * @created: 10-15-2025
+ *
+ * Provides the init and render functions reposnible for
+ * animating a spinning octogon to a WebGL2 canvas
+ */
+
 export const init = (gl: WebGL2RenderingContext) => {
     gl.viewport(0, 0, gl.canvas.width, gl.canvas.height)
 }

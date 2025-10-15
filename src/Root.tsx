@@ -1,3 +1,10 @@
+/* @Author: dwclake
+ * @Created: 10-15-2025
+ *
+ * The root layout for the website containing the header,
+ * the footer, and outlet for the main content
+ */
+
 import { NavLink, Outlet } from "react-router-dom"
 
 import logo from "~/svg/ruka-green-transparent.svg"
@@ -22,7 +29,7 @@ const Header = () => {
             <h1 className="header-title">Devon James Webb</h1>
             <nav className="header-nav">
                 <li><NavLink to="/">Home</NavLink></li>
-                <li><NavLink to="/code">Code</NavLink></li>
+                <li><NavLink to="/software">Software</NavLink></li>
                 <li><NavLink to="/photography">Photography</NavLink></li>
                 <li><NavLink to="/writing">Writing</NavLink></li>
                 <li><NavLink to="/music">Music</NavLink></li>

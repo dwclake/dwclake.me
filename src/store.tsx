@@ -1,3 +1,9 @@
+/* @Author: dwclake
+ * @Created: 10-15-2025
+ *
+ * The redux store for the website
+ */
+
 import { combineReducers, configureStore } from "@reduxjs/toolkit"
 import {
     useDispatch as reduxUseDispatch,

@@ -1,3 +1,10 @@
+/* @author: dwclake
+ * @created: 10-15-2025
+ *
+ * Stylesheet responsible for styling the root component,
+ * which includes the header, main content area, and the footer
+ */
+
 .root-container {
     display: grid;
     grid-template-rows: 80px 1fr auto;

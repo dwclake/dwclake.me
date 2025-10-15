@@ -1,4 +1,7 @@
-import React from "react"
+/* @author: dwclake
+ * @created: 10-15-2025
+ *
+ */
 
 type Props = { children: [React.ReactNode] | React.ReactNode }
 

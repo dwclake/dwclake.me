@@ -1,4 +1,8 @@
-/* Global stylesheet */
+/* @author: dwclake
+ * @created: 10-15-2025
+ *
+ * Global stylesheet providing font classes and any default stying
+ */
 
 /* Font classes */
 
@@ -47,3 +51,5 @@
     font-weight: medium;
     font-style: normal;
 }
+
+/* Default styling */

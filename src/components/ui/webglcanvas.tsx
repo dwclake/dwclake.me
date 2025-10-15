@@ -1,3 +1,9 @@
+/* @author: dwclake
+ * @created: 10-15-2025
+ *
+ * The component responsible for rendering a WebGL2 canvas
+ */
+
 import { useEffect, useRef } from "react"
 
 type Props = {

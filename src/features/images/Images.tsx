@@ -1,3 +1,10 @@
+/* @author: dwclake
+ * @created: 10-15-2025
+ *
+ * The redux slice responsible for managing the fetching
+ * and storing of image resources
+ */
+
 import { createAsyncThunk, createSlice, type PayloadAction } from "@reduxjs/toolkit"
 
 type Image = {
@@ -12,7 +19,7 @@ const images = createSlice({
         error: null as string | null
     },
     reducers: {
-        
+
     },
     extraReducers: (builder) => {
 

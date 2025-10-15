@@ -1,3 +1,9 @@
+/* @Author: dwclake
+ * @Created: 10-15-2025
+ *
+ * The entrypoint for the bun backend
+ */
+
 import { serve } from "bun"
 import index from "index.html"
 
