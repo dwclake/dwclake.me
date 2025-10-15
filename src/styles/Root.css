@@ -64,6 +64,10 @@
     color: #113322;
 }
 
+.header-nav a {
+   text-decoration: none;
+}
+
 .header-social {
     grid-area: social;
     display: flex;
@@ -75,6 +79,10 @@
 
 .header-social li {
     color: #113322;
+}
+
+.header-social a {
+    text-decoration: none;
 }
 
 .main {

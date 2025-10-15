@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom"
+import { NavLink, Outlet } from "react-router-dom"
 
 import logo from "~/svg/ruka-green-transparent.svg"
 import "@/styles/Root.css"
@@ -21,16 +21,16 @@ const Header = () => {
             <img className="header-logo" src={logo} alt="logo" />
             <h1 className="header-title">Devon James Webb</h1>
             <nav className="header-nav">
-                <li>Home</li>
-                <li>Code</li>
-                <li>Photography</li>
-                <li>Writing</li>
-                <li>Music</li>
-                <li>About</li>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/code">Code</NavLink></li>
+                <li><NavLink to="/photography">Photography</NavLink></li>
+                <li><NavLink to="/writing">Writing</NavLink></li>
+                <li><NavLink to="/music">Music</NavLink></li>
+                <li><NavLink to="/about">About</NavLink></li>
             </nav>
             <nav className="header-social">
-                <li>GitHub</li>
-                <li>LinkedIn</li>
+                <li><a href="https://github.com/dwclake" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/dwclake" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </nav>
         </header>
     )

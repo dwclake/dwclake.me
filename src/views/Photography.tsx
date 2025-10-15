@@ -1,6 +1,7 @@
 export const Photography = () => {
     return (
         <>
+
         </>
-    );
+    )
 }

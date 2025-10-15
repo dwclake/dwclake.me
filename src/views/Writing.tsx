@@ -1,6 +1,7 @@
 export const Writing = () => {
     return (
         <>
+
         </>
-    );
+    )
 }
