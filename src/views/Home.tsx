@@ -11,9 +11,15 @@ import { init, render } from "@/animations/flower/RainbowFlower"
 import "@/styles/Home.css"
 
 export const Home = () => {
+    document.getElementById("fake-link")?.addEventListener("click", (event) => {
+        event.preventDefault()
+    })
+
     return (
         <div className="home-view">
-            <WebGLCanvas width="600" height="600" onInit={init} onRender={render} />
+            <a href="Animation thanks to Dr. GPT" id="fake-link">
+                <WebGLCanvas width="600" height="600" onInit={init} onRender={render} />
+            </a>
         </div>
     )
 }
