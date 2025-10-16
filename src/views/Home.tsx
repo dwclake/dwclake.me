@@ -6,7 +6,7 @@
  */
 
 import { WebGLCanvas } from "@/components/ui/webglcanvas"
-import { init, render } from "@/animations/flower"
+import { init, render } from "@/animations/flower/RainbowFlower"
 
 export const Home = () => {
     return (

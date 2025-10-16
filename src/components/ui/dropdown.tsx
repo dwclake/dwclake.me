@@ -30,7 +30,7 @@ export const Dropdown = ({ children, className }: Props) => {
                         Nav
                     </button>
                     <ul className={`${className}-list`}>{
-                        children.map(child => <li>{child}</li>)
+                        children.map((child, i) => <li key={`${className}-${i}`}>{child}</li>)
                     }</ul>
                 </>
             )}

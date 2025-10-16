@@ -19,7 +19,11 @@ export const WebGLCanvas = ({ width, height, className = "canvas", onRender, onI
 
     useEffect(() => {
         const canvas = ref.current!
-        const gl = canvas.getContext("webgl2")
+        const gl = canvas.getContext("webgl2", {
+          alpha: true,
+          premultipliedAlpha: false,
+          preserveDrawingBuffer: true,
+        })
         if (!gl) {
             throw new Error("WebGL2 Not Supported")
         }
