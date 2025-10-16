@@ -131,7 +131,7 @@
 .header-socials {
     grid-area: social;
 
-    display: flex;
+    display: flex !important;
     padding: 0rem 1rem;
 
     align-items: center;
