@@ -44,10 +44,12 @@ const Header = () => {
                 <NavLink to="/music" onClick={onClick}>Music</NavLink>
                 <NavLink to="/about" onClick={onClick}>About</NavLink>
             </Dropdown>
-            <ul className="header-socials">
-                <li><a href="https://github.com/dwclake" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/dwclake" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            </ul>
+            <nav className="header-socials">
+                <ul className="header-socials-list">
+                    <li><a href="https://github.com/dwclake" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/dwclake" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                </ul>
+            </nav>
         </header>
     )
 }
