@@ -6,8 +6,8 @@
 import { About } from "./About"
 import { Home } from "./Home"
 import { Music } from "./Music"
-import { Photography } from "./Photography"
+import { Pictures } from "./Pictures"
 import { Software } from "./Software"
 import { Writing } from "./Writing"
 
-export { About, Home, Music, Photography, Software, Writing }
+export { About, Home, Music, Pictures, Software, Writing }

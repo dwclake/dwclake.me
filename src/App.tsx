@@ -16,7 +16,7 @@ import {
     About,
     Home,
     Music,
-    Photography,
+    Pictures,
     Software,
     Writing
 } from "@/views"
@@ -26,8 +26,8 @@ const router = createBrowserRouter(createRoutesFromElements(
         <Route index               element={ <Home /> }/>
         <Route path="/about"       element={ <About /> }/>
         <Route path="/music"       element={ <Music /> }/>
-        <Route path="/photography" element={ <Photography /> }/>
-        <Route path="/software"        element={ <Software /> }/>
+        <Route path="/pictures"    element={ <Pictures /> }/>
+        <Route path="/software"    element={ <Software /> }/>
         <Route path="/writing"     element={ <Writing /> }/>
     </Route>
 ))

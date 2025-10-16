@@ -5,7 +5,7 @@
  * my photography projects
  */
 
-export const Photography = () => {
+export const Pictures = () => {
     return (
         <>
             <p>Photography things</p>

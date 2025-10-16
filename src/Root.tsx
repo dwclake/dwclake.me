@@ -36,10 +36,10 @@ const Header = () => {
         <header className="header-container" >
             <img className="header-logo" src={logo} alt="logo" />
             <h1 className="header-title">Devon James Webb</h1>
-            <Dropdown className="header-dropdown">
+            <Dropdown className="header-nav-dropdown">
                 <NavLink to="/" onClick={onClick}>Home</NavLink>
                 <NavLink to="/software" onClick={onClick} >Software</NavLink>
-                <NavLink to="/photography" onClick={onClick}>Photography</NavLink>
+                <NavLink to="/pictures" onClick={onClick}>Pictures</NavLink>
                 <NavLink to="/writing" onClick={onClick}>Writing</NavLink>
                 <NavLink to="/music" onClick={onClick}>Music</NavLink>
                 <NavLink to="/about" onClick={onClick}>About</NavLink>
