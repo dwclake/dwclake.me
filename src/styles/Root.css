@@ -18,7 +18,7 @@
     grid-area: header;
 
     display: grid;
-    grid-template-columns: 50px 2fr 2fr 1fr;
+    grid-template-columns: 50px 25rem 50px 2fr;
     grid-template-areas: "logo title nav social";
 
     max-height: 80px;
@@ -33,6 +33,7 @@
     padding: 1rem;
 
     background-color: #dceedd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-logo {
@@ -52,7 +53,8 @@
     grid-area: title;
     display: flex;
     align-items: center;
-    padding: 0rem 2rem;
+    justify-self: center;
+    padding: 0rem 1rem;
 
     font-size: 2rem;
     color: #113322;
@@ -61,18 +63,55 @@
 .header-nav {
     grid-area: nav;
     display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-nav-button {
+    justify-content: left;
+
+    background-color: #dceedd;
+    border: 2px solid #193929;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-nav-list {
+    display: box;
     list-style: none;
     align-items: center;
-    justify-content: space-between;
-    padding: 0rem 3rem;
+    justify-items: center;
+    padding: 0.5rem 0.5rem;
+    max-width: 150px;
+    height: auto;
+
+    position: absolute;
+    top: 2rem;
+    left: 2.5rem;
+
+    background-color: #113322;
+    border: 5px solid #335544;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.header-nav li {
-    color: #113322;
+.header-nav-list li {
+    justify-content: center;
+    padding: 0.3rem 0rem;
 }
 
-.header-nav a {
-   text-decoration: none;
+.header-nav-list a {
+    padding: 1px;
+
+    text-decoration: none;
+    color: #dceedd;
+    border: 2px solid #193929;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-nav-list a.active {
+    border: 2px solid #dceedd;
 }
 
 .header-social {
@@ -80,16 +119,14 @@
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: space-between;
-    padding: 0rem 4rem;
-}
-
-.header-social li {
-    color: #113322;
+    justify-content: right;
+    padding: 0rem 1rem;
 }
 
 .header-social a {
+    padding: 0rem 2rem;
     text-decoration: none;
+    color: #113322;
 }
 
 .main {
@@ -114,4 +151,5 @@
     padding: 1rem;
 
     background-color: #dceedd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }

@@ -11,10 +11,10 @@ import {
     type TypedUseSelectorHook
 } from "react-redux"
 
-import Images from "@/features/images/Images"
+import Dropdown from "@/features/dropdown/Dropdown"
 
 const root = combineReducers({
-    images: Images
+    Dropdown: Dropdown
 })
 
 export const store = configureStore({
