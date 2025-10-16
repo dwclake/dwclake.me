@@ -1,24 +1,21 @@
 /* @author: dwclake
  * @created: 10-15-2025
  *
- * Stylesheet responsible for styling the root component,
+ * Stylesheet responsible for styling the Layout component,
  * which includes the header, main content area, and the footer
  */
 
- /* Root */
-.root-container {
+ /* Layout */
+.layout-container {
     display: grid;
     grid-template-rows: 80px 1fr 80px;
     grid-template-areas: "header" "main" "footer";
     overflow: hidden;
-    box-sizing: border-box;
 
-    height: 97vh;
-    margin: 1rem 0.5rem;
+    height: 100%;
+    width: 100%;
 
     border-radius: 10px;
-
-    background-color: #fdffee;
 }
 
 /* Header */
@@ -30,6 +27,8 @@
     grid-template-areas: "logo title nav social";
     max-height: 80px;
     width: auto;
+
+    margin: 1rem 1rem 0rem 1rem;
 
     align-content: center;
 
@@ -84,7 +83,7 @@
 
     font-size: 1rem;
     background-color: #dceedd;
-    border: 2px solid #386248;
+    border: 3px solid #386248;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -104,23 +103,23 @@
     justify-items: center;
 
     list-style: none;
-    background-color: #386248;
-    border: 3px solid #164026;
+    background-color: #164026;
+    border: 3px solid #386248;
     border-radius: 10px;
 }
 
 .header-nav-dropdown-list li {
     justify-content: center;
 
-    padding: 0.3rem 0rem;
+    padding: 0.5rem 0rem;
 }
 
 .header-nav-dropdown-list a {
-    padding: 1px;
+    padding: 0.2rem;
 
     text-decoration: none;
     color: #dceedd;
-    border: 2px solid #386248;
+    border: 3px solid #386248;
     border-radius: 10px;
 }
 
@@ -152,17 +151,20 @@
 .main {
     grid-area: main;
 
-    overflow-y: scroll;
-    padding: 1rem;
+    overflow-y: auto;
+    margin: 0rem 1rem 0rem 1rem;
+
+    background-color: #fdffee;
 }
 
 /* Footer */
 .footer-container {
     grid-area: footer;
 
-    display: flex;
+    display: grid;
     max-height: 80px;
     width: auto;
+    margin: 0rem 1rem 1rem 1rem;
 
     align-items: center;
     justify-content: center;

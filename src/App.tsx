@@ -11,7 +11,7 @@ import {
     RouterProvider
 } from "react-router-dom"
 
-import { Root } from "@/Root"
+import { Layout } from "@/Layout"
 import {
     About,
     Home,
@@ -22,7 +22,7 @@ import {
 } from "@/views"
 
 const router = createBrowserRouter(createRoutesFromElements(
-    <Route path="/"                element={ <Root /> }>
+    <Route path="/"                element={ <Layout /> }>
         <Route index               element={ <Home /> }/>
         <Route path="/about"       element={ <About /> }/>
         <Route path="/music"       element={ <Music /> }/>

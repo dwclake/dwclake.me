@@ -11,11 +11,11 @@ import { useDispatch, useSelector } from "@/store"
 import { setIsOpen } from "@/features/dropdown/Dropdown"
 import { Dropdown } from "@/components/ui/dropdown"
 import logo from "~/svg/ruka-green-transparent.svg"
-import "@/styles/Root.css"
+import "@/styles/Layout.css"
 
-export const Root = () => {
+export const Layout = () => {
     return (
-        <div className="root-container roboto">
+        <div className="layout-container roboto">
             <Header />
             <main className="main">
                 <Outlet />
