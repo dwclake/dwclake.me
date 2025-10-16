@@ -107,7 +107,6 @@
     background-color: #386248;
     border: 3px solid #164026;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-nav-dropdown-list li {
@@ -123,7 +122,6 @@
     color: #dceedd;
     border: 2px solid #386248;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-nav-dropdown-list a.active {
