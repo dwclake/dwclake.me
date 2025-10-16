@@ -11,13 +11,13 @@ import { init, render } from "@/animations/flower/RainbowFlower"
 import "@/styles/Home.css"
 
 export const Home = () => {
-    document.getElementById("fake-link")?.addEventListener("click", (event) => {
-        event.preventDefault()
-    })
+    const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        event.preventDefault();
+    }
 
     return (
         <div className="home-view">
-            <a href="Animation thanks to Dr. GPT" id="fake-link">
+            <a href="Animation thanks to Dr. GPT" onClick={handleClick}>
                 <WebGLCanvas width="600" height="600" onInit={init} onRender={render} />
             </a>
         </div>

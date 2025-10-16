@@ -135,7 +135,7 @@
     padding: 0rem 1rem;
 
     align-items: center;
-    justify-content: right;
+    justify-self: right;
 
     list-style: none;
 }
