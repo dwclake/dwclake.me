@@ -8,11 +8,13 @@
 import { WebGLCanvas } from "@/components/ui/webglcanvas"
 import { init, render } from "@/animations/flower/RainbowFlower"
 
+import "@/styles/Home.css"
+
 export const Home = () => {
     return (
-        <>
+        <div className="home-view">
             <p>Home things</p>
             <WebGLCanvas width="600" height="600" onInit={init} onRender={render} />
-        </>
+        </div>
     )
 }

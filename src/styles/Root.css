@@ -8,9 +8,13 @@
  /* Root */
 .root-container {
     display: grid;
-    grid-template-rows: 80px 1fr auto;
+    grid-template-rows: 80px 1fr 80px;
     grid-template-areas: "header" "main" "footer";
-    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    height: 97vh;
+    margin: 1rem 0.5rem;
 
     border-radius: 10px;
 
@@ -26,7 +30,6 @@
     grid-template-areas: "logo title nav social";
     max-height: 80px;
     width: auto;
-    padding: 1rem;
 
     position: sticky;
     top: 0;
@@ -51,6 +54,7 @@
 
     position: relative;
     top: 1rem;
+    left: 1rem;
 
     align-items: center;
 }
@@ -163,14 +167,12 @@
 .footer-container {
     grid-area: footer;
 
-    display: flex-box;
-    max-height: 50px;
+    display: flex;
+    max-height: 80px;
     width: auto;
-    padding: 1rem;
 
-    position: sticky;
-    bottom: 0;
-    z-index: 10;
+    align-items: center;
+    justify-content: center;
 
     background-color: #dceedd;
     border-bottom-left-radius: 10px;
