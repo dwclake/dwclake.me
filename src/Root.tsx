@@ -36,7 +36,7 @@ const Header = () => {
         <header className="header-container" >
             <img className="header-logo" src={logo} alt="logo" />
             <h1 className="header-title">Devon James Webb</h1>
-            <Dropdown className="header-nav">
+            <Dropdown className="header-dropdown">
                 <NavLink to="/" onClick={onClick}>Home</NavLink>
                 <NavLink to="/software" onClick={onClick} >Software</NavLink>
                 <NavLink to="/photography" onClick={onClick}>Photography</NavLink>
@@ -44,7 +44,7 @@ const Header = () => {
                 <NavLink to="/music" onClick={onClick}>Music</NavLink>
                 <NavLink to="/about" onClick={onClick}>About</NavLink>
             </Dropdown>
-            <nav className="header-social">
+            <nav className="header-socials">
                 <li><a href="https://github.com/dwclake" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/dwclake" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </nav>
