@@ -5,11 +5,11 @@
 <script lang="ts">
     import { page } from "$app/state";
 
-    const { children, key, ...props } = $props();
+    const { children, ...props } = $props();
     const active = $derived(props.href === page.url.pathname);
 </script>
 
-<li {key}>
+<li>
     <a
         class:active={active}
         aria-label="Navigation Button"
