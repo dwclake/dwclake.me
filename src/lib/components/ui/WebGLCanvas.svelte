@@ -3,7 +3,3 @@
 </script>
 
 <canvas {...props} ></canvas>
-
-<style lang="scss">
-
-</style>

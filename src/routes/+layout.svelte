@@ -1,6 +1,6 @@
 <script lang="ts">
-	import "../app.scss";
-	import favicon from "$lib/assets/svg/ghoose-main-transparent-icon.svg";
+	import "../app.css";
+	import favicon from "$lib/assets/svg/dragpath-logo-transparent.svg";
 
 	let { children } = $props();
 </script>

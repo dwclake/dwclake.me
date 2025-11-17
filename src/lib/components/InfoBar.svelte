@@ -1,9 +1,0 @@
-<script lang="ts">
-</script>
-
-<section>
-    <p>I'm an infobar</p>
-</section>
-
-<style lang="scss">
-</style>
