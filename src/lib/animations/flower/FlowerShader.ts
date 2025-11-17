@@ -1,8 +1,5 @@
-/**
- *
- */
 export const FlowerShader = {
-    vertex: `#version 300 es
+	vertex: `#version 300 es
     precision highp float;
 
     layout(location = 0) in vec2 aPosition;
@@ -13,7 +10,7 @@ export const FlowerShader = {
         gl_Position = vec4(aPosition, 0.0, 1.0);
     }`,
 
-    fragment: `#version 300 es
+	fragment: `#version 300 es
     precision highp float;
 
     in vec2 vPosition;
@@ -53,5 +50,5 @@ export const FlowerShader = {
 
         // Final composite
         fragColor = vec4(color * brightness, alpha);
-    }`,
+    }`
 };
