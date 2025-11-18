@@ -47,6 +47,7 @@
 	},
 	"dependencies": {
 		"@lucide/svelte": "^0.553.0",
-		"better-sqlite3": "^12.4.1"
+		"better-sqlite3": "^12.4.1",
+		"tw-merge": "^0.0.1-alpha.3"
 	}
 }
