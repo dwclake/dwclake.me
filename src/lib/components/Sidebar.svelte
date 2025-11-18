@@ -18,13 +18,13 @@
 </script>
 
 <section class="">
-	<div class="z-20 m-[1vh] rounded-3xl fixed overflow-y-auto top-0 right-0 size-12 dark:bg-dark shadow-md transform transition-all duration-300 {open ? "h-[98vh] w-[97vw] sm:w-[50vw] lg:w-[35vw]" : ""}">
+	<div class="z-20 m-[1vh] rounded-3xl fixed top-0 right-0 size-12 bg-light dark:bg-dark shadow-md transform transition-all duration-300 {open ? "h-[98vh] w-[97vw] sm:w-[50vw] lg:w-[35vw]" : "overflow-hidden"}">
 		<div class="absolute top-0 right-0">
 			<button class="flex-center h-12 w-12 cursor-pointer ml-0.5 mt-px" {onclick}>
 				{#if open}
 					<X size={30} />
 				{:else}
-					<WebGLCanvas width={600} height={600} {init} {render} class="flex object-contain size-13" />
+					<WebGLCanvas width={600} height={600} {init} {render} class="flex object-contain size-12" />
 				{/if}
 			</button>
 		</div>

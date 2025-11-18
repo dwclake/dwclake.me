@@ -20,7 +20,7 @@
 	html,
 	body,
 	#svelte {
-		@apply h-full w-full;
+		@apply h-full w-full bg-light;
 		font-family: "Roboto", sans-serif;
 		font-style: normal;
 	}
