@@ -1,10 +1,9 @@
 <script lang="ts">
-	import { X, Menu } from "@lucide/svelte";
-	import { twMerge } from "tw-merge";
+	import { X } from "@lucide/svelte";
 
-	import { pages } from "$lib/constants";
 	import { WebGLCanvas } from "$components/ui";
 	import { init, render } from "$lib/animations/flower";
+	import { pages } from "$lib/constants";
 
 	let open = $state(false);
 	let overlay: HTMLDivElement | undefined = $state(undefined);
@@ -20,8 +19,8 @@
 </script>
 
 <section>
-	<div class="z-50 m-[1vh] rounded-3xl fixed top-0 right-0 size-8 bg-light dark:bg-dark shadow-md transition duration-300 { open ? "size-fit rounded-xl" : "" }">
-		<div class={twMerge(`${ open ? "absolute top-3 right-3" : "w-full h-full flex-center" }`)}>
+	<div class="z-50 m-[1vh] rounded-3xl fixed top-0 right-0 size-8 bg-light dark:bg-dark shadow-md transition transform duration-300 { open ? "size-fit rounded-xl translate-x-1 -translate-y-1" : "translate-0" }">
+		<div class="{ open ? "absolute top-3 right-3" : "w-full h-full flex-center" }">
 			<button class="p-0 m-0 flex-center size-5 cursor-pointer" {onclick}>
 				{#if open}
 					<X size={20} />
