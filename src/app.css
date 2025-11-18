@@ -20,7 +20,7 @@
 	html,
 	body,
 	#svelte {
-		@apply h-full w-full bg-light;
+		@apply h-full w-full text-base bg-light;
 		font-family: "Roboto", sans-serif;
 		font-style: normal;
 	}
@@ -64,7 +64,7 @@
 }
 
 @theme {
-	--color-light: rgb(224, 220, 250);
+	--color-light: rgb(234, 230, 250);
 	--color-dark: hsl(248, 27.45%, 18.94%);
 
 	--animate-float: float 4s ease-in-out infinite;
