@@ -19,3 +19,12 @@ export const projects = [
 		logo: eyedhdLogo
 	}
 ];
+
+export const pages = [
+	{ name: "Home", href: "/" },
+	{ name: "Projects", href: "/projects" },
+	{ name: "Say hi!", href: "/sayhi" },
+	{ name: "Writing", href: "/writing" },
+	{ name: "Music", href: "/music" },
+	{ name: "Contact", href: "/contact" }
+];
