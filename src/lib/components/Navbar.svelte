@@ -1,4 +1,5 @@
 <nav>
+	<a href="/">Home</a>
 	<a href="/projects">Projects</a>
 	<a href="/sayhi">Say hi!</a>
 	<a href="/writing">Writing</a>
