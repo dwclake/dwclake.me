@@ -5,7 +5,7 @@
 		render: (gl: WebGL2RenderingContext, time: number) => void,
 		init?: (gl: WebGL2RenderingContext) => void
 	}
-	const { width, height, render, init, ...props }: Props = $props();
+	const { width, height, render, init, ...props }: Props & any = $props();
 
 	let canvas: HTMLCanvasElement;
 
