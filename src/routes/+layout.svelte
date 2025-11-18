@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Sidebar } from "$components";
+	import { Navbar, Sidebar } from "$components";
 	import "../app.css";
 	import favicon from "$lib/assets/svg/dragpath-logo-transparent.svg";
 
@@ -11,5 +11,8 @@
 	<title>Devon James Webb</title>
 </svelte:head>
 
-{@render children()}
-<Sidebar />
+<div class="w-full h-full text-dark bg-light dark:bg-dark dark:text-light">
+	<Navbar />
+	{@render children()}
+	<Sidebar />
+</div>
