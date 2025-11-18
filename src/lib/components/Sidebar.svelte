@@ -46,7 +46,7 @@
 			<nav class="m-4 mr-10">
 				<ul class="flex flex-col space-y-1 text-lg">
 					{#each links as { href, name }}
-						<li><a class="" {href} onclick={onnavigate}>{name}</a></li>
+						<li><a class="cursor-pointer" {href} onclick={onnavigate}>{name}</a></li>
 					{/each}
 				</ul>
 			</nav>

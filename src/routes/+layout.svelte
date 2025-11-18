@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Navbar, Sidebar } from "$components";
+	import { Sidebar } from "$components";
 	import "../app.css";
-	import favicon from "$lib/assets/svg/dragpath-logo-transparent.svg";
+	import favicon from "$lib/assets/images/dragpath-logo-transparent.svg";
 
 	let { children } = $props();
 </script>
