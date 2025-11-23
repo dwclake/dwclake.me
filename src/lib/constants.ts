@@ -23,8 +23,7 @@ export const projects = [
 export const pages = [
 	{ name: "Home", href: "/" },
 	{ name: "Projects", href: "/projects" },
-	{ name: "Say hi!", href: "/sayhi" },
+	{ name: "Drawings", href: "/drawingboard" },
 	{ name: "Writing", href: "/writing" },
-	{ name: "Music", href: "/music" },
-	{ name: "Contact", href: "/contact" }
+	{ name: "Music", href: "/music" }
 ];

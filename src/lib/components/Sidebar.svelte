@@ -3,7 +3,7 @@
 
 	import { WebGLCanvas } from "$components/ui";
 	import { init, render } from "$lib/animations/flower";
-	import { pages } from "$lib/constants";
+	import { pages, projects } from "$lib/constants";
 
 	let open = $state(false);
 	let overlay: HTMLDivElement | undefined = $state(undefined);
@@ -19,7 +19,7 @@
 </script>
 
 <section>
-	<div class="z-50 m-[1vh] rounded-3xl fixed top-0 right-0 size-8 bg-light dark:bg-dark shadow-md transition transform duration-300 { open ? "size-fit rounded-xl translate-x-1 -translate-y-1" : "translate-0" }">
+	<div class="z-50 m-[1vh] rounded-3xl fixed top-0 right-0 size-8 bg-light dark:bg-dark shadow-md dark:shadow-gray-700 transition transform duration-300 { open ? "size-fit rounded-xl translate-x-1 -translate-y-1" : "translate-0" }">
 		<div class="{ open ? "absolute top-3 right-3" : "w-full h-full flex-center" }">
 			<button class="p-0 m-0 flex-center size-5 cursor-pointer" {onclick}>
 				{#if open}
@@ -31,9 +31,28 @@
 		</div>
 		{#if open}
 			<nav class="m-4 mr-10">
-				<ul class="flex flex-col space-y-1 text-lg">
+				<ul class="flex flex-col space-y-0.5 text-lg">
 					{#each pages as { href, name }}
-						<li><a class="cursor-pointer" {href} {onclick}>{name}</a></li>
+						{#if name === "Projects"}
+							<li>{name}</li>
+							<li>
+								<ul class="flex flex-col">
+									{#each projects as project}
+										<li class="pl-4">
+											<a
+												class="cursor-pointer underline"
+												href="/projects/{project.name}"
+												{onclick}
+											>
+												{project.name}
+											</a>
+										</li>
+									{/each}
+								</ul>
+							</li>
+						{:else}
+							<li><a class="cursor-pointer underline" {href} {onclick}>{name}</a></li>
+						{/if}
 					{/each}
 				</ul>
 			</nav>

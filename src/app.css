@@ -7,7 +7,7 @@
 @plugin "@tailwindcss/typography";
 
 /* Override using browser dark mode setting */
-/*@custom-variant dark (&:where(.dark, .dark *)); */
+@custom-variant dark (&:where(.dark, .dark *));
 /*@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));*/
 
 @layer base {
@@ -64,8 +64,8 @@
 }
 
 @theme {
-	--color-light: rgb(234, 230, 250);
-	--color-dark: hsl(248, 27.45%, 18.94%);
+	--color-light: rgb(244, 240, 255);
+	--color-dark: hsl(245, 20%, 12%);
 
 	--animate-float: float 4s ease-in-out infinite;
 	@keyframes float {

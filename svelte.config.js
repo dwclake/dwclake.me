@@ -10,6 +10,15 @@ const config = {
 		alias: {
 			$components: "src/lib/components",
 			$assets: "src/lib/assets"
+		},
+		experimental: {
+			remoteFunctions: true
+		}
+	},
+
+	compilerOptions: {
+		experimental: {
+			async: true
 		}
 	}
 };

@@ -1,0 +1,13 @@
+<script lang="ts">
+	import { Button, Canvas } from "$components/ui";
+</script>
+
+<main class="size-full">
+	<div class="flex-center pt-12">
+		<Canvas width={800} height={600} class="w-[60%] h-[40%] border border-dark dark:border-light rounded-sm shadow-xl" />
+	</div>
+	<div class="flex-center space-x-4 mt-4">
+		<Button>Submit</Button>
+		<Button>Reset</Button>
+	</div>
+</main>

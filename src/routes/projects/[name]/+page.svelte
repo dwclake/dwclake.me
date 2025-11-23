@@ -4,10 +4,12 @@
 
 	let { data }: PageProps = $props();
 
-	const project = projects.find((p) => p.name === data.project_name);
+	const project = $derived(projects.find((project) => project.name === data.project_name));
 </script>
 
-<main>
-	Project details for {project?.name}
-	<img src={project?.logo} alt="{project?.name} logo" class="w-32 h-32 mt-4" />
+<main class="size-full">
+	<div class="flex-center flex-col pt-12">
+		Project details for {project?.name}
+		<img src={project?.logo} alt="{project?.name} logo" class="w-32 h-32 mt-4" />
+	</div>
 </main>
