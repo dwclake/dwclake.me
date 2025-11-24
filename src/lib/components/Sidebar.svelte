@@ -43,6 +43,7 @@
 												class="cursor-pointer"
 												href="{href}/{project.name}"
 												{onclick}
+												data-sveltekit-preload-data="tap"
 											>
 												{project.name}
 											</a>
