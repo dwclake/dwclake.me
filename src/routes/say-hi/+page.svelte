@@ -41,7 +41,7 @@
 				</canvas>
 			{/each}
 			<div class="flex-center">
-				<a href="/drawingboard/draw" class="flex-center aspect-4/3 cursor-pointer border border-mirage-950 rounded-sm shadow-xl transform scale-80 hover:scale-83 sm:scale-100 sm:hover:scale-103 md:scale-105 md:hover:scale-108 lg:scale-110 lg:hover:scale-113 duration-200 w-[400px] h-[300px]">
+				<a href="/say-hi/draw" class="flex-center aspect-4/3 cursor-pointer border border-mirage-950 rounded-sm shadow-xl transform scale-80 hover:scale-83 sm:scale-100 sm:hover:scale-103 md:scale-105 md:hover:scale-108 lg:scale-110 lg:hover:scale-113 duration-200 w-[400px] h-[300px]">
 					<Plus size="45" />
 				</a>
 			</div>

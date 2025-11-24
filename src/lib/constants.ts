@@ -30,6 +30,6 @@ export const pages = [
 	{ name: "home", href: "/" },
 	{ name: "projects", href: "/projects" },
 	{ name: "contact", href: "/contact" },
-	{ name: "drawing board", href: "/drawingboard" },
+	{ name: "say hi!", href: "/say-hi" },
 	{ name: "others", href: "/others"}
 ];
