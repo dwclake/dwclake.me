@@ -2,7 +2,7 @@
 	import { projects } from "$lib/constants";
 </script>
 
-<main class="size-full p-12">
+<main class="view-container">
 	<ul class="flex-center space-x-4">
 		{#each projects as project}
 			<li class="border border-mirage-950 rounded-sm shadow-xl tranform hover:scale-105 duration-200">

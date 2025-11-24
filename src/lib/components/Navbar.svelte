@@ -4,7 +4,7 @@
 	interface NavbarProps {
 		flex?: string,
 		onclick?: () => void,
-		embedded: boolean
+		embedded?: boolean
 	}
 
 	const { flex, onclick, embedded = false }: NavbarProps = $props();
