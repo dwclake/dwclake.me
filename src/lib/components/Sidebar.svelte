@@ -33,15 +33,15 @@
 			<nav class="m-4 mr-10">
 				<ul class="flex flex-col space-y-0.5 text-lg">
 					{#each pages as { href, name }}
+						<li><a class="cursor-pointer" {href} {onclick}>{name}</a></li>
 						{#if name === "Projects"}
-							<li>{name}</li>
 							<li>
 								<ul class="flex flex-col">
 									{#each projects as project}
 										<li class="pl-4">
 											<a
-												class="cursor-pointer underline"
-												href="/projects/{project.name}"
+												class="cursor-pointer"
+												href="{href}/{project.name}"
 												{onclick}
 											>
 												{project.name}
@@ -50,8 +50,6 @@
 									{/each}
 								</ul>
 							</li>
-						{:else}
-							<li><a class="cursor-pointer underline" {href} {onclick}>{name}</a></li>
 						{/if}
 					{/each}
 				</ul>
