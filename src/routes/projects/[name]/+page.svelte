@@ -8,7 +8,7 @@
 </script>
 
 <main class="size-full p-12">
-	<div class="flex-center flex-col pt-12">
+	<div class="flex-center flex-col">
 		Project details for {project?.name}
 		<img src={project?.logo} alt="{project?.name} logo" class="w-32 h-32 mt-4" />
 	</div>
