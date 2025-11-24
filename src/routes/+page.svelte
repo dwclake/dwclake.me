@@ -2,9 +2,9 @@
 	import portrait from "$assets/images/portrait.jpg";
 </script>
 
-<main class="w-full h-full">
+<main class="size-full p-12">
 	<!-- <div class="p-12 h-full w-full bg-linear-to-br from-light dark:from-dark from-15% dark:from-70% via-[#e2ccea] via-40% dark:via-80% to-dark dark:to-light to-90%"> -->
-		<div class="p-12 flex jusify-around items-top w-full">
+		<div class="flex jusify-around items-top w-full">
 			<h1 class="text-5xl text-right font-bold md:text-7xl lg:text-8xl">
 				DEVON<br/>JAMES<br/>WEBB
 			</h1>
