@@ -9,7 +9,8 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			$components: "src/lib/components",
-			$assets: "src/lib/assets"
+			$assets: "src/lib/assets",
+			$static: "static"
 		},
 		experimental: {
 			remoteFunctions: true
