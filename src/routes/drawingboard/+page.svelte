@@ -10,7 +10,7 @@
 	}
 </script>
 
-<main class="size-full p-12">
+<main class="view-container">
 	<div class="flex-center">
 		<span class="font-bold text-5xl pr-4">Say hi!</span>
 	</div>

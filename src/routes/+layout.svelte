@@ -11,8 +11,8 @@
 	<title>Devon James Webb</title>
 </svelte:head>
 
-<div class="w-full h-full text-mirage-950 bg-mirage-50 dark:bg-mirage-950 dark:text-mirage-50">
-	<Navbar flex="" />
+<div class="w-full min-h-auto absolute top-0 left-0 text-mirage-950 bg-mirage-50 bg-linear-to-br from-mirage-400 via-rose-50 to-mirage-50 to-90%">
+	<Navbar />
 	{@render children()}
 	<Sidebar />
 </div>

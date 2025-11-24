@@ -1,4 +1,4 @@
-<main class="size-full p-12">
+<main class="view-container">
 	<div class="flex-center">
 		Contact stuff
 	</div>

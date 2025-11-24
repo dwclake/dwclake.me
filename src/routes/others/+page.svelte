@@ -2,7 +2,7 @@
 	import { others } from "$lib/constants";
 </script>
 
-<main class="size-full p-12">
+<main class="view-container">
 	<ul class="flex-center space-x-4">
 		{#each others as other}
 			<li class="border border-mirage-950 rounded-sm p-2 shadow-xl tranform hover:scale-105 duration-200">

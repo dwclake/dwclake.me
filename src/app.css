@@ -30,6 +30,10 @@
 	.flex-center {
 		@apply flex items-center justify-center;
 	}
+	
+	.view-container {
+		@apply size-full p-12 z-20;
+	}
 
 	.abril-fatface-regular {
 		font-family: "Abril Fatface", serif;
