@@ -1,4 +1,4 @@
-<main class="view-container">
+<main class="default-margin">
 	<div class="flex-center">
 		Contact stuff
 	</div>
