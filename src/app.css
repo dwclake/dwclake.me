@@ -20,7 +20,7 @@
 	html,
 	body,
 	#svelte {
-		@apply h-full w-full text-base bg-light;
+		@apply h-full w-full text-base bg-mirage-50;
 		font-family: "Roboto", sans-serif;
 		font-style: normal;
 	}
@@ -64,8 +64,20 @@
 }
 
 @theme {
-	--color-light: rgb(244, 240, 255);
-	--color-dark: hsl(245, 20%, 12%);
+	--color-mirage: #8a8aca;
+	--color-mirage-50: #f4f0ff;
+	/*--color-mirage-50: rgb(244, 240, 255);*/
+	--color-mirage-100: #e8ecf7;
+	--color-mirage-200: #d6dbef;
+	--color-mirage-300: #bdc3e4;
+	--color-mirage-400: #a2a6d7;
+	--color-mirage-500: #8a8aca;
+	--color-mirage-600: #7771ba;
+	--color-mirage-700: #6660a2;
+	--color-mirage-800: #544f84;
+	--color-mirage-900: #47456a;
+	--color-mirage-950: #191825;
+
 
 	--animate-float: float 4s ease-in-out infinite;
 	@keyframes float {

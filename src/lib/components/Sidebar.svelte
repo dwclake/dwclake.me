@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { X } from "@lucide/svelte";
 
+	import { Navbar } from "$components";
 	import { WebGLCanvas } from "$components/ui";
 	import { init, render } from "$lib/animations/flower";
 	import { pages, projects } from "$lib/constants";
@@ -19,7 +20,7 @@
 </script>
 
 <section>
-	<div class="z-50 m-[1vh] rounded-3xl fixed top-0 right-0 size-8 bg-light dark:bg-dark shadow-md dark:shadow-gray-700 transition transform duration-300 { open ? "size-fit rounded-xl translate-x-1 -translate-y-1" : "translate-0" }">
+	<div class="block lg:hidden z-100 m-[1vh] rounded-3xl fixed top-0 right-0 size-8 bg-mirage-50 dark:bg-mirage-950 shadow-md dark:shadow-gray-700 transition transform duration-300 { open ? "size-fit rounded-xl translate-x-1 -translate-y-1" : "translate-0" }">
 		<div class="{ open ? "absolute top-3 right-3" : "w-full h-full flex-center" }">
 			<button class="p-0 m-0 flex-center size-5 cursor-pointer" {onclick}>
 				{#if open}
@@ -33,9 +34,9 @@
 			<nav class="m-4 mr-10">
 				<ul class="flex flex-col space-y-0.5 text-lg">
 					{#each pages as { href, name }}
-						<li><a class="cursor-pointer" {href} {onclick}>{name}</a></li>
-						{#if name === "Projects"}
+						{#if name === "projects"}
 							<li>
+								<span class="text-mirage-700">{name}</span>
 								<ul class="flex flex-col">
 									{#each projects as project}
 										<li class="pl-4">
@@ -51,11 +52,13 @@
 									{/each}
 								</ul>
 							</li>
+						{:else}
+							<li><a class="cursor-pointer" {href} {onclick}>{name}</a></li>
 						{/if}
 					{/each}
 				</ul>
 			</nav>
 		{/if}
 	</div>
-	<div bind:this={overlay} class="fixed top-0 left-0 z-40 w-full h-full bg-gray-500 opacity-0 transition-opacity duration-300 cursor-pointer { open ? "opacity-50" : "pointer-events-none" }"></div>
+	<div bind:this={overlay} class="fixed top-0 left-0 z-40 w-full h-full bg-mirage-500 opacity-0 transition-opacity duration-300 cursor-pointer { open ? "opacity-50" : "pointer-events-none" }"></div>
 </section>

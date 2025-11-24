@@ -21,9 +21,9 @@ export const projects = [
 ];
 
 export const pages = [
-	{ name: "Home", href: "/" },
-	{ name: "Projects", href: "/projects" },
-	{ name: "Drawings", href: "/drawingboard" },
-	{ name: "Writing", href: "/writing" },
-	{ name: "Music", href: "/music" }
+	{ name: "home", href: "/" },
+	{ name: "projects", href: "/projects" },
+	{ name: "drawing board", href: "/drawingboard" },
+	{ name: "writing", href: "/writing" },
+	{ name: "music", href: "/music" }
 ];
