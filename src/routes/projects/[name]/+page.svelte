@@ -7,7 +7,7 @@
 	const project = $derived(projects.find((project) => project.name === data.project_name));
 </script>
 
-<main class="view-container">
+<main class="default-margin">
 	<div class="flex-center flex-col">
 		Project details for {project?.name}
 		<img src={project?.logo} alt="{project?.name} logo" class="w-32 h-32 mt-4" />

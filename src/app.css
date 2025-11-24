@@ -31,8 +31,11 @@
 		@apply flex items-center justify-center;
 	}
 	
-	.view-container {
-		@apply size-full p-12 z-20;
+	.default-margin {
+		@apply z-10 mt-12 md:mt-6 ml-[15vh] mr-[20vh] max-w-[950px];
+		margin-left: 15vw;
+		margin-right: 20vw;
+		max-width: 950px;
 	}
 
 	.abril-fatface-regular {
