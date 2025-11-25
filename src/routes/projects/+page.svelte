@@ -7,7 +7,7 @@
 		{#each projects as project}
 			<li class="border border-mirage-950 rounded-sm shadow-xl tranform hover:scale-105 duration-200">
 				<a href="/projects/{project.name}" data-sveltekit-preload-data="tap">
-					<img src={project.logo} alt={project.name} width={100} height={100} />
+					<enhanced:img src={project.logo} alt={project.name} class="size-[100px]" />
 					<span class="text-mirage-950 font-semibold text-xl flex-center">{project.name}</span>
 				</a>
 			</li>

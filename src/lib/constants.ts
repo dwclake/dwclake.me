@@ -1,6 +1,6 @@
-import rukaLogo from "$lib/assets/images/projects/ruka/logo.svg";
-import osLogo from "$lib/assets/images/projects/oldies-station/logo.svg";
-import eyedhdLogo from "$lib/assets/images/projects/eyeDHD/logo.png";
+import rukaLogo from "$lib/assets/images/projects/ruka/logo.svg?enhanced";
+import osLogo from "$lib/assets/images/projects/oldies-station/logo.svg?enhanced";
+import eyedhdLogo from "$lib/assets/images/projects/eyeDHD/logo.svg?enhanced";
 
 export const projects = [
 	{
