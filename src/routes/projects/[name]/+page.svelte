@@ -10,6 +10,6 @@
 <main class="default-margin">
 	<div class="flex-center flex-col">
 		Project details for {project?.name}
-		<img src={project?.logo} alt="{project?.name} logo" class="w-32 h-32 mt-4" />
+		<enhanced:img src={project?.logo || ""} alt="{project?.name} logo" class="size-32 mt-4" />
 	</div>
 </main>
