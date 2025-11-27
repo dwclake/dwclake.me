@@ -1,5 +1,3 @@
 <main class="default-margin">
-	<div class="flex-center">
-		Contact stuff
-	</div>
+	<div class="flex-center">Contact stuff</div>
 </main>

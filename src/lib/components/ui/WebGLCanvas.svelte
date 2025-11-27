@@ -1,9 +1,9 @@
 <script lang="ts">
 	interface Props {
-		width: number,
-		height: number,
-		render: (gl: WebGL2RenderingContext, time: number) => void,
-		init?: (gl: WebGL2RenderingContext) => void
+		width: number;
+		height: number;
+		render: (gl: WebGL2RenderingContext, time: number) => void;
+		init?: (gl: WebGL2RenderingContext) => void;
 	}
 	const { width, height, render, init, ...props }: Props & any = $props();
 
@@ -35,13 +35,13 @@
 			render(gl, elapsed);
 
 			animationFrameId = requestAnimationFrame(renderLoop);
-		}
+		};
 
 		animationFrameId = requestAnimationFrame(renderLoop);
 
 		return () => {
 			cancelAnimationFrame(animationFrameId);
-		}
+		};
 	});
 </script>
 

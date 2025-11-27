@@ -2,6 +2,4 @@
 	const { ...props } = $props();
 </script>
 
-<canvas {...props}>
-
-</canvas>
+<canvas {...props}> </canvas>
