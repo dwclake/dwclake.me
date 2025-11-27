@@ -2,7 +2,7 @@
 	import { others } from "$lib/constants";
 </script>
 
-<main class="default-margin my-12">
+<main class="page-margin">
 	<ul class="flex-center space-x-4">
 		{#each others as other}
 			<li

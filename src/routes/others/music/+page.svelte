@@ -1,3 +1,3 @@
-<main class="default-margin my-12">
+<main class="page-margin">
 	<div class="flex-center">Music stuff</div>
 </main>

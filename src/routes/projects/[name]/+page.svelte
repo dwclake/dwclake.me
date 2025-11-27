@@ -9,7 +9,7 @@
 	);
 </script>
 
-<main class="default-margin my-12">
+<main class="page-margin">
 	<div class="flex-center flex-col">
 		Project details for {project?.name}
 		<enhanced:img
