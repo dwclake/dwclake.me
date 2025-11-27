@@ -20,7 +20,7 @@
 
 <section>
 	<div
-		class="fixed top-0 right-0 z-100 m-[1vh] block size-8 transform rounded-3xl bg-mirage-50 shadow-md transition duration-300 md:hidden dark:bg-mirage-950 dark:shadow-gray-700 {open
+		class="fixed top-0 right-0 z-100 m-[1vh] block size-8 transform rounded-3xl bg-mirage-50 shadow-md transition duration-300 md:hidden {open
 			? 'size-fit translate-x-1 -translate-y-1 rounded-xl'
 			: 'translate-0'}"
 	>

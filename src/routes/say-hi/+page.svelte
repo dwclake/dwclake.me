@@ -29,7 +29,7 @@
 	});
 </script>
 
-<main class="default-margin">
+<main class="default-margin my-12">
 	<div class="flex-center">
 		<span class="text-5xl font-bold">Say hi!</span>
 	</div>

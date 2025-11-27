@@ -32,10 +32,7 @@
 	}
 
 	.default-margin {
-		@apply z-10 mt-12 mr-[20vh] ml-[15vh] max-w-[950px] md:mt-6;
-		margin-left: 15vw;
-		margin-right: 20vw;
-		max-width: 950px;
+		@apply mr-[5vh] ml-[5vh] md:mr-[15vh] md:ml-[15vh] md:max-w-[950px];
 	}
 
 	.abril-fatface-regular {
