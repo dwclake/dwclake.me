@@ -1,6 +1,11 @@
 <script lang="ts">
 	import { about } from "$lib/constants";
 	import portrait from "$assets/images/portrait.jpg?enhanced";
+
+	// TODO make contact part of this page, and have the link point to "#contact"
+	// also make projects part of this page and link to "#projects"
+	// maybe get rid of their links from the top bar entirely (or only on md/lg or below)
+	// expand others to music writing and photography page links
 </script>
 
 <main class="default-margin">
