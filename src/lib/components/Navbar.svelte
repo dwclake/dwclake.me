@@ -12,7 +12,7 @@
 
 <nav
 	class="{!embedded
-		? 'default-margin hidden md:flex'
+		? 'default-margin my-6 hidden md:flex'
 		: ''} m-4 mr-10 items-center justify-center"
 >
 	<ul class="flex {flex} {!embedded ? 'space-x-4' : ''} text-lg">

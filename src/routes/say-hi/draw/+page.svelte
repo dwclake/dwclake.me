@@ -2,7 +2,7 @@
 	import { Button, Canvas } from "$components/ui";
 </script>
 
-<main class="default-margin">
+<main class="default-margin my-12">
 	<div class="flex-center">
 		<Canvas
 			width={800}
