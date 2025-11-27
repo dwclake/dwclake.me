@@ -15,14 +15,13 @@ const config = {
 		experimental: {
 			remoteFunctions: true
 		},
-		csp:{
+		csp: {
 			directives: {
-				'script-src': ['self']
+				"script-src": ["self"]
 			},
-			// must be specified with either the `report-uri` or `report-to` directives, or both
 			reportOnly: {
-				'script-src': ['self'],
-				'report-uri': ['/']
+				"script-src": ["self"],
+				"report-uri": ["/"]
 			}
 		}
 	},

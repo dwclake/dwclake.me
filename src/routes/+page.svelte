@@ -1,14 +1,25 @@
 <script lang="ts">
+	import { about } from "$lib/constants";
 	import portrait from "$assets/images/portrait.jpg?enhanced";
 </script>
 
 <main class="default-margin">
-	<div class="flex jusify-around items-top w-full">
-		<h1 class="text-5xl text-right font-bold md:text-8xl lg:text-9xl">
-			DEVON<br/>JAMES<br/>WEBB
+	<div
+		class="jusify-around items-top flex w-full flex-col flex-wrap lg:flex-row lg:flex-nowrap"
+	>
+		<h1 class="text-right text-5xl font-bold lg:text-9xl">
+			DEVON<br />JAMES<br />WEBB
 		</h1>
-		<div class="flex ml-12">
-			<enhanced:img src={portrait} class="object-cover h-auto border-4 border-b-16 md:border-8 md:border-b-32 lg:border-16 lg:border-b-64 border-mirage-950 dark:border-mirage-50 rounded-sm md:rounded-md lg:rounded-xl shadow-xl transition transform hover:scale-101 duration-300" alt="selife" aria-label="selfie" />
+		<div class="flex md:ml-12">
+			<enhanced:img
+				src={portrait}
+				class="mt-4 h-auto transform rounded-sm border-4 border-b-16 border-mirage-950 object-cover shadow-xl transition duration-300 hover:scale-101 md:rounded-md md:border-8 md:border-b-32 xl:rounded-xl xl:border-16 xl:border-b-64 dark:border-mirage-50"
+				alt="selife"
+				aria-label="selfie"
+			/>
 		</div>
+	</div>
+	<div class="mt-6">
+		<p class="text-2xl">{about.description}</p>
 	</div>
 </main>

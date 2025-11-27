@@ -20,7 +20,7 @@
 	html,
 	body,
 	#svelte {
-		@apply h-full w-full text-base bg-mirage-50;
+		@apply h-full w-full bg-mirage-50 text-base;
 		font-family: "Roboto", sans-serif;
 		font-style: normal;
 	}
@@ -30,9 +30,9 @@
 	.flex-center {
 		@apply flex items-center justify-center;
 	}
-	
+
 	.default-margin {
-		@apply z-10 mt-12 md:mt-6 ml-[15vh] mr-[20vh] max-w-[950px];
+		@apply z-10 mt-12 mr-[20vh] ml-[15vh] max-w-[950px] md:mt-6;
 		margin-left: 15vw;
 		margin-right: 20vw;
 		max-width: 950px;
@@ -63,11 +63,9 @@
 }
 
 @layer components {
-
 }
 
 @layer directives {
-
 }
 
 @theme {
@@ -84,7 +82,6 @@
 	--color-mirage-800: #544f84;
 	--color-mirage-900: #47456a;
 	--color-mirage-950: #191825;
-
 
 	--animate-float: float 4s ease-in-out infinite;
 	@keyframes float {

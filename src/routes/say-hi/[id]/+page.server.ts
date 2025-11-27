@@ -1,4 +1,4 @@
-import type { PageServerLoad, Actions } from './$types';
+import type { PageServerLoad, Actions } from "./$types";
 
 export const load: PageServerLoad = () => {
 	const signatures = [] as Blob[];
@@ -6,8 +6,6 @@ export const load: PageServerLoad = () => {
 	return {
 		signatures
 	};
-}
+};
 
-export const actions: Actions = {
-
-}
+export const actions: Actions = {};

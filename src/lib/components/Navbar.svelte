@@ -2,18 +2,29 @@
 	import { pages } from "$lib/constants";
 
 	interface NavbarProps {
-		flex?: string,
-		onclick?: () => void,
-		embedded?: boolean
+		flex?: string;
+		onclick?: () => void;
+		embedded?: boolean;
 	}
 
 	const { flex, onclick, embedded = false }: NavbarProps = $props();
 </script>
 
-<nav class="{!embedded ? "hidden md:flex default-margin" : ""} justify-center items-center m-4 mr-10">
-	<ul class="flex {flex} {!embedded ? "space-x-4" : ""} text-lg">
+<nav
+	class="{!embedded
+		? 'default-margin hidden md:flex'
+		: ''} m-4 mr-10 items-center justify-center"
+>
+	<ul class="flex {flex} {!embedded ? 'space-x-4' : ''} text-lg">
 		{#each pages as { href, name }}
-			<li><a class="cursor-pointer" {href} {onclick} data-sveltekit-preload-data="tap">{name}</a></li>
+			<li>
+				<a
+					class="cursor-pointer"
+					{href}
+					{onclick}
+					data-sveltekit-preload-data="tap">{name}</a
+				>
+			</li>
 		{/each}
 	</ul>
 </nav>
