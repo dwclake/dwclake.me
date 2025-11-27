@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { about } from "$lib/constants";
+	import { about, education, skills } from "$lib/constants";
 	import portrait from "$assets/images/portrait.jpg?enhanced";
 
 	// TODO make contact part of this page, and have the link point to "#contact"
@@ -8,7 +8,7 @@
 	// expand others to music writing and photography page links
 </script>
 
-<main class="default-margin my-12">
+<main class="page-margin">
 	<div
 		class="jusify-around items-top flex w-full flex-col flex-wrap lg:flex-row lg:flex-nowrap"
 	>
@@ -24,7 +24,28 @@
 			/>
 		</div>
 	</div>
-	<div class="mt-6">
+	<div id="introduction" class="mt-6">
+		<h2 class="text-2xl font-semibold lg:text-6xl">Introduction</h2>
 		<p class="text-lg md:text-2xl">{about.introduction}</p>
+	</div>
+	<div id="projects" class="mt-6">
+		<h2 class="text-2xl font-semibold lg:text-6xl">Projects</h2>
+		<p class="text-lg md:text-2xl">Project details</p>
+	</div>
+	<div id="skills" class="mt-6">
+		<h2 class="text-2xl font-semibold lg:text-6xl">Skills</h2>
+		<p class="text-lg md:text-2xl">Skill details</p>
+	</div>
+	<div id="education" class="mt-6">
+		<h2 class="text-2xl font-semibold lg:text-6xl">Education</h2>
+		<p class="text-lg md:text-2xl">Education details</p>
+	</div>
+	<div id="experience" class="mt-6">
+		<h2 class="text-2xl font-semibold lg:text-6xl">Experience</h2>
+		<p class="text-lg md:text-2xl">Experience details</p>
+	</div>
+	<div id="contact" class="mt-6">
+		<h2 class="text-2xl font-semibold lg:text-6xl">Contact</h2>
+		<p class="text-lg md:text-2xl">Contact details</p>
 	</div>
 </main>

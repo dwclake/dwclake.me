@@ -20,7 +20,7 @@
 	html,
 	body,
 	#svelte {
-		@apply h-full w-full bg-mirage-50 text-base;
+		@apply size-full bg-mirage-50 text-base;
 		font-family: "Roboto", sans-serif;
 		font-style: normal;
 	}
@@ -33,6 +33,10 @@
 
 	.default-margin {
 		@apply mr-[5vh] ml-[5vh] md:mr-[15vh] md:ml-[15vh] md:max-w-[950px];
+	}
+
+	.page-margin {
+		@apply mr-[5vh] ml-[5vh] md:mr-[15vh] md:ml-[15vh] md:max-w-[950px] mt-16 mb-12 md:mt-12;
 	}
 
 	.abril-fatface-regular {

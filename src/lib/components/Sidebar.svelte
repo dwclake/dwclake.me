@@ -20,25 +20,25 @@
 
 <section>
 	<div
-		class="fixed top-0 right-0 z-100 m-[1vh] block size-8 transform rounded-3xl bg-mirage-50 shadow-md transition duration-300 md:hidden {open
+		class="fixed top-1 right-1 z-100 m-[1vh] block size-12 transform rounded-3xl bg-mirage-50 shadow-md transition duration-300 md:hidden {open
 			? 'size-fit translate-x-1 -translate-y-1 rounded-xl'
 			: 'translate-0'}"
 	>
 		<div
 			class={open
-				? "absolute top-3 right-3"
+				? "absolute top-4 right-4"
 				: "flex-center h-full w-full"}
 		>
-			<button class="flex-center m-0 size-5 cursor-pointer p-0" {onclick}>
+			<button class="flex-center m-0 size-7 cursor-pointer p-0" {onclick}>
 				{#if open}
-					<X size={20} />
+					<X size={25} />
 				{:else}
 					<WebGLCanvas
 						width={600}
 						height={600}
 						{init}
 						{render}
-						class="size-10"
+						class="size-14"
 					/>
 				{/if}
 			</button>

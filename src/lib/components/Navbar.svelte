@@ -12,10 +12,10 @@
 
 <nav
 	class="{!embedded
-		? 'default-margin my-6 hidden md:flex'
+		? 'default-margin mt-6 hidden md:flex'
 		: ''} m-4 mr-10 items-center justify-center"
 >
-	<ul class="flex {flex} {!embedded ? 'space-x-4' : ''} text-lg">
+	<ul class="flex {flex} {!embedded ? 'space-x-4' : ''} text-2xl">
 		{#each pages as { href, name }}
 			<li>
 				<a
