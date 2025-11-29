@@ -37,7 +37,7 @@
 		<ul class="flex-center mt-4 flex-wrap space-y-4 space-x-4">
 			{#each projects as project}
 				<li
-					class="tranform rounded-md border border-mirage-200 bg-mirage-100 shadow-md duration-200 hover:scale-103"
+					class="tranform mb-4 rounded-md border border-mirage-200 bg-mirage-100 shadow-md duration-200 hover:scale-103"
 				>
 					<a
 						href="/projects/{project.name}"
@@ -46,7 +46,7 @@
 						<enhanced:img
 							src={project.logo}
 							alt={project.name}
-							class="size-[100px] object-cover px-2 pt-2"
+							class="size-[100px] object-contain px-2 pt-2"
 						/>
 						<span
 							class="flex-center text-xl font-semibold text-mirage-950"
