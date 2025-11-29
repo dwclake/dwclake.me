@@ -64,6 +64,17 @@
 }
 
 @layer components {
+	.card {
+		@apply transform rounded-md border border-mirage-500 p-2 shadow-md transition duration-300 hover:scale-103 hover:shadow-lg;
+	}
+
+	.heading-2 {
+		@apply text-2xl font-semibold md:text-4xl xl:text-6xl;
+	}
+
+	.list {
+		@apply flex flex-wrap gap-2;
+	}
 }
 
 @layer directives {
