@@ -20,7 +20,7 @@
 		<div class="flex lg:ml-12">
 			<enhanced:img
 				src={portrait}
-				class="mt-4 h-auto transform rounded-xl border-16 border-b-64 border-mirage-950 object-cover shadow-xl transition duration-300 hover:scale-101 md:mt-0"
+				class="mt-4 h-auto transform rounded-xl border border-mirage-500 object-cover p-4 pb-16 shadow-md transition duration-300 hover:scale-101 hover:shadow-lg md:mt-0"
 				alt="selife"
 				aria-label="selfie"
 			/>
@@ -37,7 +37,7 @@
 		<ul class="flex-center mt-4 flex-wrap space-y-4 space-x-4">
 			{#each projects as project}
 				<li
-					class="tranform mb-4 rounded-md border border-mirage-200 bg-mirage-100 shadow-md duration-200 hover:scale-103"
+					class="tranform mb-4 rounded-md border border-mirage-500 shadow-md transition duration-200 hover:scale-103 hover:shadow-lg"
 				>
 					<a
 						href="/projects/{project.name}"
@@ -61,10 +61,10 @@
 	<div id="skills" class="mt-6">
 		<h2 class="text-2xl font-semibold md:text-4xl xl:text-6xl">Skills</h2>
 		<h4 class="mt-4">Work skills:</h4>
-		<ul class="flex flex-wrap gap-x-2 gap-y-1">
+		<ul class="flex flex-wrap gap-x-2 gap-y-2">
 			{#each skills.work as skill}
 				<li
-					class="transform rounded-md border border-mirage-200 bg-mirage-100 p-2 text-lg shadow-md duration-300 hover:scale-103"
+					class="transform rounded-md border border-mirage-500 p-2 text-lg shadow-md transition duration-300 hover:scale-103 hover:shadow-lg"
 				>
 					{skill}
 				</li>
@@ -74,7 +74,7 @@
 		<ul class="flex flex-wrap gap-x-2 gap-y-2">
 			{#each skills.tech as skill}
 				<li
-					class="transform rounded-md border border-mirage-200 bg-mirage-100 p-2 text-lg shadow-md duration-300 hover:scale-105"
+					class="transform rounded-md border border-mirage-500 p-2 text-lg shadow-md transition duration-300 hover:scale-105 hover:shadow-lg"
 				>
 					{skill}
 				</li>
@@ -85,10 +85,10 @@
 		<h2 class="text-2xl font-semibold md:text-4xl xl:text-6xl">
 			Education
 		</h2>
-		<ul class="mt-4 flex flex-col gap-y-4">
+		<ul class="mt-4 flex flex-col gap-y-2">
 			{#each education as edu}
 				<li
-					class="transform rounded-md border border-mirage-200 bg-mirage-100 p-4 shadow-md duration-300 hover:scale-103"
+					class="transform rounded-md border border-mirage-500 p-4 shadow-md transition duration-300 hover:scale-103 hover:shadow-lg"
 				>
 					<h3 class="text-xl font-semibold">{edu.institution}</h3>
 					<p class="text-lg italic">
@@ -124,7 +124,7 @@
 		<h2 class="text-2xl font-semibold md:text-4xl xl:text-6xl">Contact</h2>
 		<ul class="mt-4 flex flex-col gap-y-2 text-lg md:text-xl">
 			<li
-				class="transform rounded-md border border-mirage-200 bg-mirage-100 p-2 shadow-md duration-300 hover:scale-103"
+				class="transform rounded-md border border-mirage-500 p-2 shadow-md transition duration-300 hover:scale-103 hover:shadow-lg"
 			>
 				<span class="font-semibold">Email:</span>
 				<a
@@ -135,7 +135,7 @@
 				</a>
 			</li>
 			<li
-				class="transform rounded-md border border-mirage-200 bg-mirage-100 p-2 shadow-md duration-300 hover:scale-103"
+				class="transform rounded-md border border-mirage-500 p-2 shadow-md transition duration-300 hover:scale-103 hover:shadow-lg"
 			>
 				<span class="font-semibold">University Email:</span>
 				<a
@@ -146,7 +146,7 @@
 				</a>
 			</li>
 			<li
-				class="transform rounded-md border border-mirage-200 bg-mirage-100 p-2 shadow-md duration-300 hover:scale-103"
+				class="transform rounded-md border border-mirage-500 p-2 shadow-md transition duration-300 hover:scale-103 hover:shadow-lg"
 			>
 				<span class="font-semibold">GitHub:</span>
 				<a
@@ -163,7 +163,7 @@
 		<ul class="flex-center mt-4 space-x-4">
 			{#each hobbies as hobby}
 				<li
-					class="tranform rounded-md border border-mirage-200 bg-mirage-100 p-2 shadow-md duration-200 hover:scale-103"
+					class="tranform rounded-md border border-mirage-500 p-2 shadow-md transition duration-200 hover:scale-103 hover:shadow-lg"
 				>
 					<a
 						href="/others/{hobby.name}"
