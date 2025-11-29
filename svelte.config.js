@@ -9,6 +9,7 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			$components: "src/lib/components",
+			$state: "src/lib/state.svelte.ts",
 			$assets: "src/lib/assets",
 			$static: "static"
 		},

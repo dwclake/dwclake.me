@@ -6,33 +6,24 @@ interface About {
 	introduction: string;
 }
 
-interface Skills {
-	workSkills: string[];
-	techSkills: string[];
-}
-
-interface University {
-	name: string;
-	start: string;
-	end: string;
-	degree?: string;
-	completed?: boolean;
-	relevantCourses?: { code: string; name: string }[];
-}
-
 export const about: About = {
 	introduction:
 		"Salut! Comment ça va? I am a undergraduate computer science major at Frenso State University. I love nature, music, photography, and programming."
 };
 
+interface Skills {
+	work: string[];
+	tech: string[];
+}
+
 export const skills: Skills = {
-	workSkills: [
+	work: [
 		"Great at problem solving",
 		"Works great with teams",
 		"Strong communication skills",
 		"Adapts to change easily"
 	],
-	techSkills: [
+	tech: [
 		"Typescript",
 		"Sveltekit",
 		"Tailwind",
@@ -48,9 +39,18 @@ export const skills: Skills = {
 	]
 };
 
+interface University {
+	institution: string;
+	start: string;
+	end: string;
+	degree?: string;
+	details?: string;
+	relevantCourses?: { code: string; name: string }[];
+}
+
 export const education: University[] = [
 	{
-		name: "California State University, Fresno",
+		institution: "California State University, Fresno",
 		start: "August 2022",
 		end: "Current",
 		degree: "Bachelor's of Science in Computer Science",
@@ -62,27 +62,18 @@ export const education: University[] = [
 		]
 	},
 	{
-		name: "California State University, Monterey",
+		institution: "California State University, Monterey",
 		start: "August 2020",
-		end: "December 2020",
-		degree: "Bachelor's of Science in Biology",
-		completed: false
+		end: "December 2020"
 	},
 	{
-		name: "Fresno City College",
+		institution: "Fresno City College",
 		start: "January 2015",
 		end: "May 2020"
 	}
 ];
 
-interface Project {
-	name: string;
-	link: string;
-	logo: any; // @sveltejs/enhanced-img.Picture
-	description: string;
-}
-
-export const projects: Project[] = [
+export const projects = [
 	{
 		name: "ruka",
 		link: "https://www.github.com/ruka-lang/ruka",
@@ -103,7 +94,13 @@ export const projects: Project[] = [
 	}
 ];
 
-export const others = [
+export const contacts = {
+	email: "clake.dw@gmail.com",
+	edu: "dwebb559@mail.fresnostate.edu",
+	github: "https://www.github.com/dwclake"
+};
+
+export const hobbies = [
 	{ name: "photography" },
 	{ name: "writing" },
 	{ name: "music" }
@@ -111,8 +108,10 @@ export const others = [
 
 export const pages = [
 	{ name: "home", href: "/" },
-	{ name: "projects", href: "/projects" },
-	{ name: "contact", href: "/contact" },
-	{ name: "say hi!", href: "/say-hi" },
-	{ name: "others", href: "/others" }
+	{ name: "projects", href: "#projects" },
+	{ name: "education", href: "#education" },
+	{ name: "experience", href: "#experience" },
+	{ name: "contact", href: "#contact" },
+	{ name: "hobbies", href: "#hobbies" },
+	{ name: "say hi!", href: "/say-hi" }
 ];

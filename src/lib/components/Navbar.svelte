@@ -15,11 +15,11 @@
 		? 'default-margin mt-6 hidden md:flex'
 		: ''} m-4 mr-10 items-center justify-center"
 >
-	<ul class="flex {flex} {!embedded ? 'space-x-4' : ''} text-2xl">
+	<ul class="flex {flex} {!embedded ? 'space-x-4' : ''} text-xl">
 		{#each pages as { href, name }}
 			<li>
 				<a
-					class="cursor-pointer"
+					class="cursor-pointer text-mirage-900 hover:text-mirage-950 hover:underline"
 					{href}
 					{onclick}
 					data-sveltekit-preload-data="tap">{name}</a
