@@ -1,6 +1,6 @@
-import rukaLogo from "$assets/images/projects/ruka/logo.svg?enhanced";
+import ruka_logo from "$assets/images/projects/ruka/logo.svg?enhanced";
 // import osLogo from "$assets/images/projects/oldies-station/logo.svg?enhanced";
-import eyedhdLogo from "$assets/images/projects/eyeDHD/logo.svg?enhanced";
+import eyedhd_logo from "$assets/images/projects/eyeDHD/logo.svg?enhanced";
 
 interface About {
 	introduction: string;
@@ -45,7 +45,7 @@ interface University {
 	end: string;
 	degree?: string;
 	completed?: boolean;
-	relevantCourses?: { code: string; name: string }[];
+	relevant_courses?: { code: string; name: string }[];
 }
 
 export const education: University[] = [
@@ -55,7 +55,7 @@ export const education: University[] = [
 		end: "Current",
 		degree: "Bachelor's of Science in Computer Science",
 		completed: false,
-		relevantCourses: [
+		relevant_courses: [
 			{
 				code: "CSCI 150",
 				name: "Software Engineering"
@@ -87,7 +87,7 @@ export const projects = [
 	{
 		name: "ruka",
 		link: "https://www.github.com/ruka-lang/ruka",
-		logo: rukaLogo,
+		logo: ruka_logo,
 		description: ""
 	},
 	// {
@@ -99,7 +99,7 @@ export const projects = [
 	{
 		name: "eyedhd",
 		link: "https://www.github.com/BernyFranklin/eyeDHD",
-		logo: eyedhdLogo,
+		logo: eyedhd_logo,
 		description: ""
 	}
 ];
@@ -112,7 +112,7 @@ export const contacts = [
 
 export const hobbies = ["photography", "writing", "music"];
 
-export const navlinks = [
+export const default_links = [
 	{ name: "home", href: "/" },
 	{ name: "projects", href: "#projects" },
 	{ name: "education", href: "#education" },
@@ -122,10 +122,16 @@ export const navlinks = [
 	{ name: "say hi!", href: "/say-hi" }
 ];
 
+export const alternate_links = [
+	{ name: "home", href: "/" },
+	{ name: "say hi!", href: "/say-hi" }
+];
+
 export default {
 	hobbies,
 	contacts,
-	navlinks,
+	default_links,
+	alternate_links,
 	education,
 	skills,
 	about,

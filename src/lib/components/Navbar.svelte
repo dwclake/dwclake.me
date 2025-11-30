@@ -1,15 +1,18 @@
 <script lang="ts">
 	import { ArrowUpToLine } from "@lucide/svelte";
+	import { Card } from "$components/ui";
 
-	import { navlinks } from "$lib/constants";
+	import { store } from "$state";
+	import { List } from "$components/ui";
 
 	interface NavbarProps {
-		flex?: string;
+		class?: string;
 		onclick?: () => void;
 		embedded?: boolean;
 	}
 
-	const { flex, onclick, embedded = false }: NavbarProps = $props();
+	const { onclick, embedded = false, ...props }: NavbarProps = $props();
+	const links = $derived(store.links);
 </script>
 
 <section>
@@ -18,28 +21,27 @@
 			? 'default-margin mt-6 hidden md:flex'
 			: ''}"
 	>
-		<ul
-			class="flex {flex} md:text-md text-lg lg:text-xl xl:text-2xl {!embedded
-				? 'space-x-2 lg:space-x-4'
-				: ''}"
+		<List
+			list={links}
+			class="{!embedded ? 'space-x-2 lg:space-x-4' : ''} {props.class}"
 		>
-			{#each navlinks as { href, name }}
-				<li>
-					<a
-						class="link"
-						{href}
-						{onclick}
-						data-sveltekit-preload-data="tap">{name}</a
-					>
-				</li>
-			{/each}
-		</ul>
+			{#snippet Item({ name, href })}
+				<a
+					class="link md:text-md text-lg lg:text-xl xl:text-2xl"
+					{href}
+					{onclick}
+					data-sveltekit-preload-data="tap"
+				>
+					{name}
+				</a>
+			{/snippet}
+		</List>
 	</nav>
 	{#if !embedded}
-		<div class="flex-center card link fixed right-4 bottom-4 z-50 p-1">
+		<Card class="flex-center link fixed right-4 bottom-4 z-50 p-1">
 			<a href="#top">
 				<ArrowUpToLine size={25} />
 			</a>
-		</div>
+		</Card>
 	{/if}
 </section>

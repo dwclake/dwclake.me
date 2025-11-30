@@ -24,11 +24,7 @@
 			? 'size-fit translate-x-1 -translate-y-1 rounded-xl'
 			: 'translate-0'}"
 	>
-		<div
-			class={open
-				? "absolute top-4 right-4"
-				: "flex-center h-full w-full"}
-		>
+		<div class={open ? "absolute top-4 right-4" : "flex-center h-full w-full"}>
 			<Button class="m-0 size-7 p-0" {onclick}>
 				{#if open}
 					<X size={25} />
@@ -44,7 +40,7 @@
 			</Button>
 		</div>
 		{#if open}
-			<Navbar flex="flex-col" embedded={true} {onclick} />
+			<Navbar class="flex-col" embedded={true} {onclick} />
 		{/if}
 	</div>
 	<div

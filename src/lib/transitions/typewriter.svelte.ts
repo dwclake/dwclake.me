@@ -4,13 +4,9 @@ type Options = {
 	speed?: number;
 };
 
-export function typewriter(
-	node: Element,
-	{ speed = 1 }: Options
-): TransitionConfig {
+export function typewriter(node: Element, { speed = 1 }: Options): TransitionConfig {
 	const valid =
-		node.childNodes.length === 1 &&
-		node.childNodes[0].nodeType === Node.TEXT_NODE;
+		node.childNodes.length === 1 && node.childNodes[0].nodeType === Node.TEXT_NODE;
 
 	if (!valid) {
 		throw new Error(

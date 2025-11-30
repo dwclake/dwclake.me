@@ -2,11 +2,7 @@
  *
  */
 
-const createShader = (
-	gl: WebGL2RenderingContext,
-	type: number,
-	source: string
-) => {
+const createShader = (gl: WebGL2RenderingContext, type: number, source: string) => {
 	const shader = gl.createShader(type)!;
 
 	gl.shaderSource(shader, source);
