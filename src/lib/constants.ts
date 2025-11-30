@@ -132,8 +132,8 @@ export const projects = [
 ];
 
 export const contacts = [
-	{ title: "Email", value: "mailto:clake.dw@gmail.com" },
-	{ title: "Edu", value: "mailto:dwebb559@mail.fresnostate.edu" },
+	{ title: "Email", value: "clake.dw@gmail.com" },
+	{ title: "Edu", value: "dwebb559@mail.fresnostate.edu" },
 	{ title: "Github", value: "https://www.github.com/dwclake" }
 ];
 
