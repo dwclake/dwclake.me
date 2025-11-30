@@ -1,5 +1,8 @@
 <script lang="ts">
-	const { ...props } = $props();
+	interface Props {
+		class?: string;
+	}
+	const { ...props }: Props = $props();
 </script>
 
 <canvas {...props}> </canvas>
