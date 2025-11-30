@@ -12,6 +12,7 @@
 </svelte:head>
 
 <div
+	id="top"
 	class="absolute w-full justify-center bg-mirage-50 bg-linear-to-br from-mirage-400 via-rose-50 to-mirage-50 to-90% text-mirage-950"
 >
 	<Navbar />

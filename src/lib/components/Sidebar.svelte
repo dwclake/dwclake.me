@@ -2,7 +2,7 @@
 	import { X } from "@lucide/svelte";
 
 	import { Navbar } from "$components";
-	import { WebGLCanvas } from "$components/ui";
+	import { Button, WebGLCanvas } from "$components/ui";
 	import { init, render } from "$lib/animations/flower";
 
 	let open = $state(false);
@@ -29,7 +29,7 @@
 				? "absolute top-4 right-4"
 				: "flex-center h-full w-full"}
 		>
-			<button class="flex-center m-0 size-7 cursor-pointer p-0" {onclick}>
+			<Button class="m-0 size-7 p-0" {onclick}>
 				{#if open}
 					<X size={25} />
 				{:else}
@@ -41,7 +41,7 @@
 						class="size-14"
 					/>
 				{/if}
-			</button>
+			</Button>
 		</div>
 		{#if open}
 			<Navbar flex="flex-col" embedded={true} {onclick} />
