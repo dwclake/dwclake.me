@@ -9,7 +9,7 @@
 	const { Item, list, ...props }: Props<any> = $props();
 </script>
 
-<ul class="list {props.class}">
+<ul class="flex flex-wrap gap-2 {props.class}">
 	{#each list as item}
 		<li>{@render Item(item)}</li>
 	{/each}

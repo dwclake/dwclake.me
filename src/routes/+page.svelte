@@ -2,6 +2,11 @@
 	import { Card, List } from "$components/ui";
 	import constants from "$lib/constants";
 	import portrait from "$assets/images/portrait.jpg?enhanced";
+
+	import { store } from "$state";
+	import { default_links } from "$lib/constants";
+
+	store.links = default_links;
 </script>
 
 <main class="page-margin">
@@ -22,17 +27,14 @@
 	</div>
 	<div id="introduction" class="mt-6">
 		<h2 class="heading-2">Introduction</h2>
-		<p class="heading-3 mt-4 font-normal">{constants.about.introduction}</p>
+		<p class="paragraph-3 mt-4">{constants.about.introduction}</p>
 	</div>
 	<div id="projects" class="mt-6">
 		<h2 class="heading-2">Projects</h2>
 		<List class="mt-4" list={constants.projects}>
 			{#snippet Item({ name, logo }: any)}
 				<Card class="link mb-4">
-					<a
-						href="/projects/{name}"
-						data-sveltekit-preload-data="tap"
-					>
+					<a href="/projects/{name}" data-sveltekit-preload-data="tap">
 						<enhanced:img
 							src={logo}
 							alt={name}
@@ -70,7 +72,7 @@
 				end,
 				degree,
 				completed,
-				relevantCourses
+				relevant_courses
 			}: any)}
 				<Card>
 					<h4 class="heading-4">
@@ -85,9 +87,9 @@
 							{completed ? "&mdash; Earned" : undefined}
 						{/if}
 					</p>
-					{#if relevantCourses}
+					{#if relevant_courses}
 						<h4 class="heading-4 mt-2">Relevant Courses:</h4>
-						<List list={relevantCourses} class="ml-4">
+						<List list={relevant_courses} class="ml-4">
 							{#snippet Item({ code, name }: any)}
 								<p class="paragraph">{code} &mdash; {name}</p>
 							{/snippet}

@@ -3,13 +3,17 @@
 	import { Plus } from "@lucide/svelte";
 	import { Button } from "$components/ui";
 
+	import { store } from "$state";
+	import { alternate_links } from "$lib/constants";
+
+	store.links = alternate_links;
+
 	const { data }: PageProps = $props();
 
 	const onclick = () => {};
 
 	$effect(() => {
-		const canvases =
-			document.querySelectorAll<HTMLCanvasElement>(".drawing");
+		const canvases = document.querySelectorAll<HTMLCanvasElement>(".drawing");
 		canvases.forEach((canvas) => {
 			const ctx = canvas.getContext("2d");
 			const signature = canvas.getAttribute("id");

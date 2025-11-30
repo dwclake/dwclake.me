@@ -2,6 +2,11 @@
 	import { projects } from "$lib/constants";
 	import { type PageProps } from "./$types";
 
+	import { store } from "$state";
+	import { alternate_links } from "$lib/constants";
+
+	store.links = alternate_links;
+
 	let { data }: PageProps = $props();
 
 	const project = $derived(

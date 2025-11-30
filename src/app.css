@@ -39,6 +39,34 @@
 		@apply mt-20 mr-[5vh] mb-12 ml-[5vh] md:mt-12 md:mr-[15vh] md:ml-[15vh] md:max-w-[950px];
 	}
 
+	.heading-1 {
+		@apply text-4xl font-bold md:text-6xl xl:text-8xl;
+	}
+
+	.heading-2 {
+		@apply text-2xl font-semibold md:text-4xl xl:text-6xl;
+	}
+
+	.heading-3 {
+		@apply text-lg font-semibold md:text-2xl xl:text-4xl;
+	}
+
+	.heading-4 {
+		@apply text-base font-semibold md:text-lg xl:text-2xl;
+	}
+
+	.paragraph {
+		@apply text-sm font-normal md:text-base xl:text-lg;
+	}
+
+	.paragraph-3 {
+		@apply text-lg font-normal md:text-2xl xl:text-4xl;
+	}
+
+	.link {
+		@apply cursor-pointer text-mirage-900 hover:text-mirage-950 hover:underline;
+	}
+
 	.abril-fatface-regular {
 		font-family: "Abril Fatface", serif;
 		font-style: normal;
@@ -64,41 +92,6 @@
 }
 
 @layer components {
-	.btn {
-		@apply flex cursor-pointer items-center justify-center;
-	}
-
-	.card {
-		@apply transform rounded-md border border-mirage-300 bg-mirage-50 p-2 shadow-md transition duration-300 hover:scale-103 hover:shadow-lg;
-	}
-
-	.heading-1 {
-		@apply text-4xl font-bold md:text-6xl xl:text-8xl;
-	}
-
-	.heading-2 {
-		@apply text-2xl font-semibold md:text-4xl xl:text-6xl;
-	}
-
-	.heading-3 {
-		@apply text-lg font-semibold md:text-2xl xl:text-4xl;
-	}
-
-	.heading-4 {
-		@apply text-base font-semibold md:text-lg xl:text-2xl;
-	}
-
-	.paragraph {
-		@apply md:text-base text-sm font-normal xl:text-lg;
-	}
-
-	.link {
-		@apply cursor-pointer text-mirage-900 hover:text-mirage-950 hover:underline;
-	}
-
-	.list {
-		@apply flex flex-wrap gap-2;
-	}
 }
 
 @layer directives {

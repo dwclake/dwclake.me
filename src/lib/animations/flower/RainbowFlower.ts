@@ -9,17 +9,11 @@ export function render(gl: WebGL2RenderingContext, t: number) {
 	gl.clearColor(0.0, 0.0, 0.0, 0.0);
 	gl.clear(gl.COLOR_BUFFER_BIT);
 
-	const program = createProgram(
-		gl,
-		FlowerShader.vertex,
-		FlowerShader.fragment
-	)!;
+	const program = createProgram(gl, FlowerShader.vertex, FlowerShader.fragment)!;
 	gl.useProgram(program);
 
 	// Fullscreen quad vertices
-	const vertices = new Float32Array([
-		-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1
-	]);
+	const vertices = new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]);
 	const buffer = gl.createBuffer();
 	gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
 	gl.bufferData(gl.ARRAY_BUFFER, vertices, gl.STATIC_DRAW);
