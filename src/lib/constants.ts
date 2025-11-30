@@ -121,3 +121,13 @@ export const navlinks = [
 	{ name: "hobbies", href: "#hobbies" },
 	{ name: "say hi!", href: "/say-hi" }
 ];
+
+export default {
+	hobbies,
+	contacts,
+	navlinks,
+	education,
+	skills,
+	about,
+	projects
+};

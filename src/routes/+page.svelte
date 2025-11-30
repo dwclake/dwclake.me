@@ -1,13 +1,6 @@
 <script lang="ts">
 	import { Card, List } from "$components/ui";
-	import {
-		about,
-		contacts,
-		education,
-		hobbies,
-		projects,
-		skills
-	} from "$lib/constants";
+	import constants from "$lib/constants";
 	import portrait from "$assets/images/portrait.jpg?enhanced";
 </script>
 
@@ -29,11 +22,11 @@
 	</div>
 	<div id="introduction" class="mt-6">
 		<h2 class="heading-2">Introduction</h2>
-		<p class="heading-3 mt-4 font-normal">{about.introduction}</p>
+		<p class="heading-3 mt-4 font-normal">{constants.about.introduction}</p>
 	</div>
 	<div id="projects" class="mt-6">
 		<h2 class="heading-2">Projects</h2>
-		<List class="mt-4" list={projects}>
+		<List class="mt-4" list={constants.projects}>
 			{#snippet Item({ name, logo }: any)}
 				<Card class="link mb-4">
 					<a
@@ -56,13 +49,13 @@
 	<div id="skills" class="mt-6">
 		<h2 class="heading-2">Skills</h2>
 		<h4 class="heading-4 mt-4">Work skills:</h4>
-		<List list={skills.work}>
+		<List list={constants.skills.work}>
 			{#snippet Item(skill: string)}
 				<Card><p class="paragraph">{skill}</p></Card>
 			{/snippet}
 		</List>
 		<h4 class="heading-4 mt-4">Tech skills:</h4>
-		<List list={skills.tech}>
+		<List list={constants.skills.tech}>
 			{#snippet Item(skill: string)}
 				<Card><p class="paragraph">{skill}</p></Card>
 			{/snippet}
@@ -70,7 +63,7 @@
 	</div>
 	<div id="education" class="mt-6">
 		<h2 class="heading-2">Education</h2>
-		<List class="mt-4 flex-col" list={education}>
+		<List class="mt-4 flex-col" list={constants.education}>
 			{#snippet Item({
 				institution,
 				start,
@@ -112,7 +105,7 @@
 	-->
 	<div id="contact" class="mt-6">
 		<h2 class="heading-2">Contact</h2>
-		<List class="mt-4 flex-col" list={contacts}>
+		<List class="mt-4 flex-col" list={constants.contacts}>
 			{#snippet Item({ title, value }: any)}
 				<Card>
 					<span class="heading-4">{title}:</span>
@@ -125,7 +118,7 @@
 	</div>
 	<div id="hobbies" class="mt-6">
 		<h2 class="heading-2">Hobbies</h2>
-		<List class="mt-4" list={hobbies}>
+		<List class="mt-4" list={constants.hobbies}>
 			{#snippet Item(hobby: string)}
 				<Card>
 					<a href="/others/{hobby}" data-sveltekit-preload-data="tap">
