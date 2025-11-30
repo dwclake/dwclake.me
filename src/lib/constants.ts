@@ -8,13 +8,41 @@ interface About {
 
 export const about: About = {
 	introduction:
-		"Salut! Comment ça va? I am a undergraduate computer science major at Frenso State University. My passions are compiler/programming language design and web development. I love animals, nature, music, photography, and writing."
+		"Salut! Comment ça va? I am a undergraduate computer science major at Frenso State University. My passions are compiler/programming language design and web development. I love animals and nature, photography, writing, and music."
 };
 
 interface Skills {
 	work: string[];
 	tech: string[];
 }
+
+/*
+![web-dev](https://skillicons.dev/icons?i=ts,svelte,tailwind,react,electron,sqlite&perline=6)
+![low-level](https://skillicons.dev/icons?i=zig,c,ocaml)
+![others](https://skillicons.dev/icons?i=git,github,linux)
+
+<div align="left">
+	<img width="35" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png" alt="TypeScript" title="TypeScript"/>
+	<img width="35" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/svelte.png" alt="Svelte" title="Svelte"/>
+	<img width="35" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png" alt="Tailwind CSS" title="Tailwind CSS"/>
+	<img width="35" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" alt="React" title="React"/>
+	<img width="35" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/electron.png" alt="Electron" title="Electron"/>
+	<img width="35" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sqlite.png" alt="SQLite" title="SQLite"/>
+</div>
+
+
+<div align="left">
+	<img width="35" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/ziglang.png" alt="Zig" title="Zig"/>
+	<img width="35" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" title="C"/>
+	<img width="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ocaml/ocaml-original.svg" alt="OCaml" title="OCaml"/>
+</div>
+
+<div align="left">
+	<img width="35" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/git.png" alt="Git" title="Git"/>
+	<img width="35" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/github.png" alt="GitHub" title="GitHub"/>
+	<img width="35" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/linux.png" alt="Linux" title="Linux"/>
+</div>
+*/
 
 export const skills: Skills = {
 	work: [
@@ -28,7 +56,6 @@ export const skills: Skills = {
 		"Svelte",
 		"Tailwind",
 		"Sqlite",
-		//"Bun",
 		"React",
 		"Electron",
 		"Zig",
@@ -105,8 +132,8 @@ export const projects = [
 ];
 
 export const contacts = [
-	{ title: "Email", value: "clake.dw@gmail.com" },
-	{ title: "Edu", value: "dwebb559@mail.fresnostate.edu" },
+	{ title: "Email", value: "mailto:clake.dw@gmail.com" },
+	{ title: "Edu", value: "mailto:dwebb559@mail.fresnostate.edu" },
 	{ title: "Github", value: "https://www.github.com/dwclake" }
 ];
 
