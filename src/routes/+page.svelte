@@ -111,7 +111,10 @@
 			{#snippet Item({ title, value }: any)}
 				<Card>
 					<span class="heading-4">{title}:</span>
-					<a class="link paragraph" href={value}>
+					<a
+						class="link paragraph"
+						href={value.startsWith("https") ? value : `mailto:${value}`}
+					>
 						{value}
 					</a>
 				</Card>
