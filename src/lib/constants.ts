@@ -1,5 +1,5 @@
 import ruka_logo from "$assets/images/projects/ruka/logo.svg?enhanced";
-// import osLogo from "$assets/images/projects/oldies-station/logo.svg?enhanced";
+import solecism_logo from "$assets/images/projects/solecism/logo.svg?enhanced";
 import eyedhd_logo from "$assets/images/projects/eyeDHD/logo.svg?enhanced";
 
 interface About {
@@ -55,9 +55,12 @@ export const skills: Skills = {
 		"Typescript",
 		"Svelte",
 		"Tailwind",
-		"Sqlite",
+		"Bun",
+		"Solidjs",
+		"Electrobun",
 		"React",
 		"Electron",
+		"Sqlite",
 		"Zig",
 		"C",
 		"Git",
@@ -113,21 +116,27 @@ export const education: University[] = [
 export const projects = [
 	{
 		name: "ruka",
-		link: "https://www.github.com/ruka-lang/ruka",
+		github: "https://www.github.com/ruka-lang/ruka",
+		website: "https://www.ruka-lang.org",
 		logo: ruka_logo,
-		description: ""
+		description:
+			"Full-stack programming language, targeting arm64, wasm, and javascript; written in Zig."
 	},
-	// {
-	// 	name: "solecism",
-	// 	link: "https://www.github.com/oldies-station/solecism",
-	// 	logo: osLogo,
-	// 	description: ""
-	// },
+	{
+		name: "solecism",
+		github: "https://www.github.com/dwclake/solecism",
+		website: "https://solecism.dwclake.me",
+		logo: solecism_logo,
+		description:
+			"WYSIWYG editor for creative projects, hopefully one part of an open-source creative software suite; built with Electrobun and Solidjs."
+	},
 	{
 		name: "eyedhd",
-		link: "https://www.github.com/BernyFranklin/eyeDHD",
+		github: "https://www.github.com/BernyFranklin/eyeDHD",
+		website: "",
 		logo: eyedhd_logo,
-		description: ""
+		description:
+			"Tool for generating eye movement and dilation animations using measurements taken by the Fresno State Psychology department during their research striving to diagnose ADHD quantitatively; built with Electron and React."
 	}
 ];
 
