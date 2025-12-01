@@ -1,7 +1,3 @@
-/**
- * Global stying
- */
-
 @import "tailwindcss";
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/typography";
@@ -91,16 +87,9 @@
 	}
 }
 
-@layer components {
-}
-
-@layer directives {
-}
-
 @theme {
 	--color-mirage: #8a8aca;
 	--color-mirage-50: #f4f0ff;
-	/*--color-mirage-50: rgb(244, 240, 255);*/
 	--color-mirage-100: #e8ecf7;
 	--color-mirage-200: #d6dbef;
 	--color-mirage-300: #bdc3e4;
@@ -111,6 +100,62 @@
 	--color-mirage-800: #544f84;
 	--color-mirage-900: #47456a;
 	--color-mirage-950: #191825;
+
+	/*petite orchid*/
+	--color-orchid: #c37770;
+	--color-orchid-50: #fbf6f5;
+	--color-orchid-100: #f7eae9;
+	--color-orchid-200: #f1d9d7;
+	--color-orchid-300: #e6bfbb;
+	--color-orchid-400: #d49791;
+	--color-orchid-500: #c37770;
+	--color-orchid-600: #ad5d55;
+	--color-orchid-700: #904c45;
+	--color-orchid-800: #78413c;
+	--color-orchid-900: #663a36;
+	--color-orchid-950: #361c19;
+
+	/*antique brass*/
+	--color-oxide: #b76449;
+	--color-oxide-50: #faf4f0;
+	--color-oxide-100: #f0e0d5;
+	--color-oxide-200: #dfbfa8;
+	--color-oxide-300: #ce9b7b;
+	--color-oxide-400: #c07a56;
+	--color-oxide-500: #b76449;
+	--color-oxide-600: #a14d3e;
+	--color-oxide-700: #873a36;
+	--color-oxide-800: #6f3132;
+	--color-oxide-900: #5c2b2c;
+	--color-oxide-950: #341415;
+
+	/*reno sand*/
+	--color-dune: #ac8346;
+	--color-dune-50: #f8f5ee;
+	--color-dune-100: #eee8d3;
+	--color-dune-200: #ded0aa;
+	--color-dune-300: #cbb179;
+	--color-dune-400: #bb9754;
+	--color-dune-500: #ac8346;
+	--color-dune-600: #9e703e;
+	--color-dune-700: #774f31;
+	--color-dune-800: #65422e;
+	--color-dune-900: #57392c;
+	--color-dune-950: #321e16;
+
+	/*chelsea cucumber*/
+	--color-treefrog: #639354;
+	--color-treefrog-50: #f5f9f4;
+	--color-treefrog-100: #e9f2e6;
+	--color-treefrog-200: #d3e5cd;
+	--color-treefrog-300: #b0cfa6;
+	--color-treefrog-400: #7dab6e;
+	--color-treefrog-500: #639354;
+	--color-treefrog-600: #4f7841;
+	--color-treefrog-700: #405f36;
+	--color-treefrog-800: #354d2e;
+	--color-treefrog-900: #2c4027;
+	--color-treefrog-950: #152112;
 
 	--animate-float: float 4s ease-in-out infinite;
 	@keyframes float {
