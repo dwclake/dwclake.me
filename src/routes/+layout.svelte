@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Navbar, Sidebar } from "$components";
-	import "../app.css";
+	import "./layout.css";
 	import favicon from "$assets/images/ghoose-main-transparent-icon.svg";
 
 	let { children } = $props();
