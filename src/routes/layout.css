@@ -101,6 +101,9 @@
 	--color-mirage-900: #47456a;
 	--color-mirage-950: #191825;
 
+	--shadow-mirage-300: 2px 2px var(--color-mirage-300);
+	--shadow-mirage-950: 2px 2px var(--color-mirage-950);
+
 	/*petite orchid*/
 	--color-orchid: #c37770;
 	--color-orchid-50: #fbf6f5;

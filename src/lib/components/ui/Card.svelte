@@ -9,10 +9,7 @@
 </script>
 
 <div
-	class="transform rounded-md border border-mirage-950 bg-mirage-50 p-2 transition duration-300 hover:scale-103 {props.class}"
-	style="
-		box-shadow: 2px 2px var(--color-mirage-950);
-	"
+	class="transform rounded-md border-2 border-mirage-300 bg-mirage-50 p-2 shadow-mirage-300 transition duration-300 hover:scale-103 {props.class}"
 >
 	{@render children()}
 </div>
