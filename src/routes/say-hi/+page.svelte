@@ -33,6 +33,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>say hi!</title>
+</svelte:head>
+
 <main class="page-margin">
 	<div class="flex-center">
 		<span class="text-5xl font-bold">Say hi!</span>
