@@ -3,7 +3,7 @@
 	import { Card } from "$components/ui";
 
 	import { store } from "$state";
-	import { List } from "$components/ui";
+	import { Button, List } from "$components/ui";
 
 	interface NavbarProps {
 		class?: string;
@@ -32,7 +32,7 @@
 					{onclick}
 					data-sveltekit-preload-data="tap"
 				>
-					{name}
+					<Button>{name}</Button>
 				</a>
 			{/snippet}
 		</List>

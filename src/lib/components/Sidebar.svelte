@@ -20,14 +20,19 @@
 
 <section>
 	<div
-		class="fixed top-1 right-1 z-100 m-[1vh] block size-12 transform rounded-3xl bg-mirage-50 shadow-md transition duration-300 md:hidden {open
-			? 'size-fit translate-x-1 -translate-y-1 rounded-xl'
+		class="fixed top-1 right-1 z-100 m-[1vh] block size-12 transform rounded-xl border-2 border-mirage-300 bg-mirage-50 shadow-mirage-300 transition duration-300 md:hidden {open
+			? 'size-fit translate-x-1 -translate-y-1'
 			: 'translate-0'}"
 	>
 		<div class={open ? "absolute top-4 right-4" : "flex-center h-full w-full"}>
-			<Button class="m-0 size-7 p-0" {onclick}>
+			<Button
+				class="m-0 size-10 p-0 {!open
+					? 'border-none bg-transparent shadow-none'
+					: undefined}"
+				{onclick}
+			>
 				{#if open}
-					<X size={25} />
+					<X size={25} strokeWidth={3} />
 				{:else}
 					<WebGLCanvas
 						width={600}
