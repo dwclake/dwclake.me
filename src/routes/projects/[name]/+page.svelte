@@ -14,6 +14,10 @@
 	);
 </script>
 
+<svelte:head>
+	<title>{project?.name}</title>
+</svelte:head>
+
 <main class="page-margin">
 	<div class="flex-center flex-col">
 		Project details for {project?.name}
