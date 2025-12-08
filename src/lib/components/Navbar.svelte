@@ -32,7 +32,11 @@
 					{onclick}
 					data-sveltekit-preload-data="tap"
 				>
-					<Button>{name}</Button>
+					{#if embedded}
+						<Button>{name}</Button>
+					{:else}
+						{name}
+					{/if}
 				</a>
 			{/snippet}
 		</List>
