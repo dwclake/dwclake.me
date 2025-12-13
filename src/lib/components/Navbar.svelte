@@ -42,10 +42,10 @@
 		</List>
 	</nav>
 	{#if !embedded}
-		<Card class="flex-center link fixed right-4 bottom-4 z-50 p-1">
+		<Button class="flex-center link fixed right-4 bottom-4 z-50 p-1">
 			<a href="#top">
 				<ArrowUpToLine size={25} />
 			</a>
-		</Card>
+		</Button>
 	{/if}
 </section>

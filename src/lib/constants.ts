@@ -154,8 +154,8 @@ export const default_links = [
 	{ name: "education", href: "#education" },
 	//{ name: "experience", href: "#experience" },
 	{ name: "contact", href: "#contact" },
-	{ name: "hobbies", href: "#hobbies" },
-	{ name: "say hi!", href: "/say-hi" }
+	{ name: "hobbies", href: "#hobbies" }
+	//{ name: "say hi!", href: "/say-hi" }
 ];
 
 export const alternate_links = [
@@ -164,8 +164,8 @@ export const alternate_links = [
 	{ name: "education", href: "/#education" },
 	//{ name: "experience", href: "/#experience" },
 	{ name: "contact", href: "/#contact" },
-	{ name: "hobbies", href: "/#hobbies" },
-	{ name: "say hi!", href: "/say-hi" }
+	{ name: "hobbies", href: "/#hobbies" }
+	//{ name: "say hi!", href: "/say-hi" }
 ];
 
 export default {
