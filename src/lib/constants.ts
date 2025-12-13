@@ -122,14 +122,14 @@ export const projects = [
 		description:
 			"Full-stack programming language, targeting arm64, wasm, and javascript; written in Zig."
 	},
-	{
-		name: "solecism",
-		github: "https://www.github.com/dwclake/solecism",
-		website: "https://solecism.dwclake.me",
-		logo: solecism_logo,
-		description:
-			"WYSIWYG editor for creative projects, hopefully one part of an open-source creative software suite; built with Electrobun and Solidjs."
-	},
+	//{
+	//	name: "solecism",
+	//	github: "https://www.github.com/dwclake/solecism",
+	//	website: "https://solecism.dwclake.me",
+	//	logo: solecism_logo,
+	//	description:
+	//		"WYSIWYG editor for creative projects, hopefully one part of an open-source creative software suite; built with Electrobun and Solidjs."
+	//},
 	{
 		name: "eyedhd",
 		github: "https://www.github.com/BernyFranklin/eyeDHD",
